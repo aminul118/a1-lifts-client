@@ -17,7 +17,7 @@ const DesktopNavbar = () => {
   };
 
   return (
-    <header className="hidden md:block w-full bg-slate-900 fixed z-50 py-2 top-0 ">
+    <header className="hidden md:block w-full bg-slate-800 fixed z-50 py-2 top-0 ">
       <nav className="relative container mx-auto shadow">
         <div className="container mx-auto flex items-center justify-between px-4 py-2">
           <Link href="/" passHref>

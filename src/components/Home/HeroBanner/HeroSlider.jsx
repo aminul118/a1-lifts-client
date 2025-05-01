@@ -54,7 +54,7 @@ const HeroSlider = () => {
             style={{ backgroundImage: `url(${item.img})` }}
           >
             {/* Overlay content */}
-            <div className="absolute inset-0 bg-black/40 bg-opacity-20 flex items-center">
+            <div className="absolute inset-0 bg-black/50 bg-opacity-20 flex items-center">
               <div
                 className={`w-full max-w-3xl mx-auto  flex flex-col justify-center items-center text-center px-4 ${item.class}`}
               >
