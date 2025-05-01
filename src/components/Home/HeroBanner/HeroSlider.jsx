@@ -1,5 +1,4 @@
 "use client";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,7 +11,7 @@ const HeroSlider = () => {
   const images = [
     {
       id: 1,
-      img: "/assets/backgrounds/reliable-riding.jpg",
+      img: "/assets/backgrounds/banner1.jpg",
       title: "Elevate Your Shipping Experience",
       class: "text-white",
       description:
@@ -22,7 +21,7 @@ const HeroSlider = () => {
     },
     {
       id: 2,
-      img: "/assets/backgrounds/reliable-riding.jpg",
+      img: "/assets/backgrounds/banner2.png",
       title: "Fast Delivery Services",
       class: "text-white",
       description:
@@ -48,7 +47,7 @@ const HeroSlider = () => {
       modules={[Pagination, Navigation, Autoplay]}
       className="mySwiper"
     >
-      {images.map((item) => (
+      {images?.map((item) => (
         <SwiperSlide key={item.id}>
           <div
             className="relative w-full h-[350px] lg:h-[500px] 2xl:h-[750px] bg-cover bg-center"
@@ -57,7 +56,7 @@ const HeroSlider = () => {
             {/* Overlay content */}
             <div className="absolute inset-0 bg-black/40 bg-opacity-20 flex items-center">
               <div
-                className={`w-full max-w-3xl mx-auto  flex flex-col justify-center items-center text-center ${item.class}`}
+                className={`w-full max-w-3xl mx-auto  flex flex-col justify-center items-center text-center px-4 ${item.class}`}
               >
                 <h2 className="text-2xl md:text-4xl font-bold mb-4">
                   {item.title}
