@@ -1,40 +1,40 @@
 const faqData = [
   {
     value: "item-1",
-    question: "What industries does Digital Twin Energy LLC serve?",
+    question: "What services does A1 Lifts & Engineering provide?",
     answer:
-      "We specialize in providing digital twin solutions for the solar energy, oil, and gas industries to optimize operations and enhance decision-making.",
+      "We provide installation, sales, and maintenance of lifts, generators, and substations, along with custom engineering solutions for various industries.",
   },
   {
     value: "item-2",
     question:
-      "What is a digital twin and how does it help in the energy sector?",
+      "Do you offer both residential and commercial lift installations?",
     answer:
-      "A digital twin is a virtual model of a physical asset or system that enables real-time monitoring, predictive maintenance, and performance optimization, helping reduce downtime and improve efficiency.",
+      "Yes, we offer lift installations for residential buildings, commercial complexes, and industrial facilities, tailored to meet your specific needs and safety standards.",
   },
   {
     value: "item-3",
-    question: "Do you offer predictive maintenance solutions?",
+    question: "Can I buy lifts, generators, or substations directly from you?",
     answer:
-      "Yes, we offer AI-powered predictive maintenance tools that help identify issues before they cause failures, reducing operational costs and downtime.",
+      "Absolutely. We sell high-quality lifts, generators, and substations from trusted manufacturers and can assist you in choosing the right product for your project.",
   },
   {
     value: "item-4",
-    question: "Can your solutions be customized for specific energy projects?",
+    question: "Do you provide maintenance services after installation?",
     answer:
-      "Absolutely. Our digital twin platforms are fully customizable to fit unique project requirements in solar plants, oil fields, and gas pipelines.",
+      "Yes, we offer regular maintenance and servicing to ensure your lifts, generators, and substations operate safely and efficiently over time.",
   },
   {
     value: "item-5",
-    question: "Is your platform compatible with existing SCADA or IoT systems?",
+    question: "How experienced is your team in handling large-scale projects?",
     answer:
-      "Yes, our solutions seamlessly integrate with existing SCADA, IoT, and sensor systems to provide a unified digital experience.",
+      "Our team has extensive experience managing and executing large-scale installations for corporate, industrial, and governmental projects with strict compliance and quality assurance.",
   },
   {
     value: "item-6",
-    question: "How can I get started with Digital Twin Energy LLC?",
+    question: "How can I request a quote or consultation?",
     answer:
-      "You can contact us through our website to schedule a consultation or request a demo of our digital twin platform tailored to your industry.",
+      "You can request a quote or book a consultation by contacting us through our website's contact form or by calling us directly. We'll be happy to assist you.",
   },
 ];
 

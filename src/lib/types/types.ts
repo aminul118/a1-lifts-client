@@ -14,3 +14,10 @@ export interface TypewriterProps {
   delaySpeed?: number;
   className?: string;
 }
+
+export type Banner = {
+  heading?: string;
+  description?: string;
+  className?: string;
+  backgroundImagePath?: string;
+};

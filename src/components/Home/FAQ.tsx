@@ -5,9 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
 import Image from "next/image";
-
 import SectionTitle from "../ui/SectionTitle";
 import faqData from "@/lib/constants/faqData";
 
@@ -22,9 +20,9 @@ const FAQ = () => {
           <Image
             data-aos="fade-left"
             // data-aos="fade-left"
-            src={"/assets/icons/FAQ.png"}
-            width={500}
-            height={500}
+            src={"/assets/icons/faq.svg"}
+            width={400}
+            height={400}
             alt="FAQ image of TabEdge"
             className="max-w-[80%] md:max-w-full"
           />

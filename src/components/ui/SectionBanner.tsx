@@ -1,18 +1,11 @@
-import React from "react";
+import { Banner } from "@/lib/types/types";
 
-type SectionBannerProps = {
-  heading?: string;
-  description?: string;
-  className?: string;
-  backgroundImagePath?: string;
-};
-
-const SectionBanner: React.FC<SectionBannerProps> = ({
+const SectionBanner = ({
   heading,
   description,
   className,
   backgroundImagePath,
-}) => {
+}: Banner) => {
   return (
     <div
       className={`${className} relative w-full h-64 bg-cover bg-center  flex items-center justify-center `}

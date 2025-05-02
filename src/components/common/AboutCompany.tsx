@@ -1,22 +1,34 @@
 import Image from "next/image";
-import { Leaf, Home } from "lucide-react";
+import { Wrench, Building2 } from "lucide-react";
 import Container from "../ui/Container";
 
 const imageSources = [
-  { src: "/assets/image/about/about-1.png", alt: "Solar Workers" },
-  { src: "/assets/image/about/about-2.png", alt: "Solar Field" },
-  { src: "/assets/image/about/about-3.png", alt: "Solar House" },
-  { src: "/assets/image/about/about-4.png", alt: "Solar Panel" },
+  {
+    src: "/assets/images/about/lift-service.png",
+    alt: "Lift Installation",
+  },
+  {
+    src: "/assets/images/about/genarator-servising.jpg",
+    alt: "Generator Maintenance",
+  },
+  {
+    src: "/assets/images/about/substation-installed.jpg",
+    alt: "Substation Setup",
+  },
+  {
+    src: "/assets/images/about/lift-button.png",
+    alt: "Engineering Team",
+  },
 ];
 
 const features = [
   {
-    icon: <Leaf className="text-green-600 w-6 h-6" />,
-    label: "Solar In Agriculture Farm",
+    icon: <Wrench className="text-green-600 w-12 h-12" />,
+    label: "Expert Installation & Repairs",
   },
   {
-    icon: <Home className="text-green-600 w-6 h-6" />,
-    label: "Solar In Residential Areas",
+    icon: <Building2 className="text-green-600 w-12 h-12" />,
+    label: "Residential & Industrial Services",
   },
 ];
 
@@ -24,20 +36,16 @@ const AboutCompany = () => {
   return (
     <Container className="grid md:grid-cols-2 gap-12 items-center py-16">
       {/* Diamond Image Grid */}
-      <div className="relative w-full h-[400px] md:h-[500px] flex justify-center items-center ">
-        <div className="absolute transform rotate-45 grid grid-cols-2  md:w-[360px] md:h-[360px]">
+      <div className="relative w-full h-[400px] md:h-[500px] flex justify-center items-center">
+        <div className="grid grid-cols-2 gap-1 w-full h-full">
           {imageSources.map((image, index) => (
-            <div
-              data-aos="fade-right"
-              key={index}
-              className="overflow-hidden border"
-            >
+            <div key={index} className="overflow-hidden">
               <Image
                 src={image.src}
                 alt={image.alt}
-                width={200}
-                height={200}
-                className="w-full h-full object-cover transform -rotate-45"
+                width={600}
+                height={400}
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
               />
             </div>
           ))}
@@ -49,18 +57,24 @@ const AboutCompany = () => {
         <p className="text-muted-foreground text-sm font-semibold uppercase mb-2">
           About Our Company
         </p>
-        <h2 className="text-3xl font-bold mb-4">Simplicity & Efficiency</h2>
+        <h2 className="text-3xl font-bold mb-4">
+          Powering Progress With Engineering Excellence
+        </h2>
         <p className="text-blue-600 text-lg font-medium mb-4">
-          Experience The Power of The Sun at its Finest.
+          Reliable Lift, Generator & Substation Solutions — All Under One Roof.
         </p>
         <p className="text-muted-foreground mb-4">
-          These cases are perfectly simple and easy to distinguish. In a free
-          hour, when our power off choice is untrammelled and when nothing
-          prevents our being able to do what we like best—every pleasure.
+          A1 Lifts & Engineering is a service-first company delivering
+          professional installation, maintenance, and sales of lifts,
+          generators, and substations. Our team consists of certified
+          technicians and experienced engineers who follow industry-leading
+          practices to ensure quality and compliance.
         </p>
         <p className="text-muted-foreground mb-6">
-          Perfectly simple and easy to distinguish. In a free hour, when our
-          power choice is untrammelled and when nothing prevents, we give best.
+          From residential buildings to industrial complexes, we offer custom
+          engineering solutions that prioritize safety, efficiency, and
+          long-term value. Choose A1 for dependable support and end-to-end
+          service excellence.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6 text-left">
@@ -70,15 +84,6 @@ const AboutCompany = () => {
               <span className="font-semibold">{item.label}</span>
             </div>
           ))}
-        </div>
-
-        <div className="mt-6">
-          <a
-            href="#"
-            className="text-sm font-semibold text-blue-700 hover:underline flex items-center gap-2"
-          >
-            More About Solartech →
-          </a>
         </div>
       </div>
     </Container>

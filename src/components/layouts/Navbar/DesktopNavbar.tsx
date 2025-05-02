@@ -18,11 +18,11 @@ const DesktopNavbar = () => {
 
   return (
     <header className="hidden md:block w-full bg-slate-800 fixed z-50 py-2 top-0 ">
-      <nav className="relative container mx-auto shadow">
+      <nav className="relative container mx-auto">
         <div className="container mx-auto flex items-center justify-between px-4 py-2">
           <Link href="/" passHref>
             <div className="flex items-center gap-3">
-              <p className="text-2xl font-semibold text-white">Point</p>
+              <p className="text-2xl font-semibold text-white">A1 Lifts</p>
             </div>
           </Link>
 

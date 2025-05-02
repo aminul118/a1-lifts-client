@@ -1,30 +1,4 @@
-import React from "react";
-import { RiSecurePaymentLine, RiBankLine } from "react-icons/ri";
-import { TbLicense } from "react-icons/tb";
-
-const features = [
-  {
-    id: 1,
-    icon: <RiSecurePaymentLine className="text-5xl text-yellow-400" />,
-    title: "Trusted & Transparent",
-    description:
-      "We maintain full transparency in our processes, ensuring trust at every stage of your energy journey.",
-  },
-  {
-    id: 2,
-    icon: <TbLicense className="text-5xl text-green-400" />,
-    title: "Certified & Compliant",
-    description:
-      "Our operations are fully licensed and compliant with national energy and sustainability regulations.",
-  },
-  {
-    id: 3,
-    icon: <RiBankLine className="text-5xl text-blue-400" />,
-    title: "Financially Backed",
-    description:
-      "We safeguard your investments through partnerships with top-tier financial institutions.",
-  },
-];
+import features from "@/lib/constants/features";
 
 const WhyA1Lifts = () => {
   return (
@@ -32,7 +6,7 @@ const WhyA1Lifts = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 z-0" />
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto text-white text-center">
+      <div className="relative z-10 w-full container mx-auto text-white text-center">
         <div className="max-w-3xl mx-auto px-2 sm:px-4">
           <h2
             data-aos="fade-left"
@@ -52,8 +26,8 @@ const WhyA1Lifts = () => {
         </div>
 
         {/* Cards Container */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 px-2 sm:px-0">
-          {features.map(({ id, icon, title, description }) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 px-2 sm:px-0">
+          {features?.map(({ id, icon, title, description }) => (
             <div
               data-aos="fade-up"
               key={id}
