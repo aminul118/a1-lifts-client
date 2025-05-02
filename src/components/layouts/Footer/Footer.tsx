@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 dark:bg-black text-gray-300 py-12">
+    <footer className="bg-black text-gray-300 py-12">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Logo and Description */}
         <div>
@@ -83,7 +83,7 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500">
-        &copy; {new Date().getFullYear()} Digital Twin Technolog. All rights
+        &copy; {new Date().getFullYear()} A1 Lifts and Engineering. All rights
         reserved.
       </div>
     </footer>

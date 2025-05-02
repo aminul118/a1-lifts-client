@@ -4,11 +4,11 @@ import HeroSlider from "@/components/Home/HeroSlider";
 
 const HomePage = () => {
   return (
-    <div className="overflow-x-hidden">
+    <>
       <HeroSlider />
       <WhyA1Lifts />
       <FAQ />
-    </div>
+    </>
   );
 };
 
