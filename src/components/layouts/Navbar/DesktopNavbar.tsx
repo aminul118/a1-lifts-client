@@ -2,19 +2,14 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { IoIosArrowUp } from "react-icons/io";
-import { MdOutlineArrowRightAlt } from "react-icons/md";
-import { Home, Info, PhoneCall, Settings2, Target } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "./Toggle";
-import { ecoSystem, moreProducts } from "@/lib/constants/navMenu";
+import Image from "next/image";
+import hoverMenu from "@/lib/constants/hoverMenu";
 
 const DesktopNavbar = () => {
   const [isProductHover, setIsProductHover] = useState(false);
-
-  const handleMenuClick = () => {
-    setIsProductHover(true);
-  };
 
   return (
     <header className="hidden md:block w-full bg-slate-800 fixed z-50 py-2 top-0 ">
@@ -26,11 +21,10 @@ const DesktopNavbar = () => {
             </div>
           </Link>
 
-          <ul className="flex items-center gap-6 text-[1rem]">
+          <ul className="flex items-center gap-6 lg:gap-10 text-[1rem]">
             <li>
               <Link href="/">
                 <div className="flex items-center hover:text-blue-500 gap-2 text-white">
-                  <Home className="text-[1.2rem]" />
                   Home
                 </div>
               </Link>
@@ -38,7 +32,6 @@ const DesktopNavbar = () => {
             <li>
               <Link href="/about">
                 <div className="flex items-center gap-2 hover:text-blue-500 text-white">
-                  <Info className="text-[1.2rem]" />
                   About
                 </div>
               </Link>
@@ -49,7 +42,6 @@ const DesktopNavbar = () => {
               onMouseLeave={() => setIsProductHover(false)}
             >
               <div className="flex items-center gap-2 cursor-pointer hover:text-blue-500 text-white">
-                <Settings2 className="text-[1.2rem]" />
                 Services
                 <IoIosArrowUp
                   className={`transition-transform ${
@@ -61,7 +53,6 @@ const DesktopNavbar = () => {
             <li>
               <Link href="/vision">
                 <div className="flex items-center gap-2 hover:text-blue-500 text-white">
-                  <Target className="text-[1.2rem]" />
                   Vision
                 </div>
               </Link>
@@ -73,7 +64,6 @@ const DesktopNavbar = () => {
             <Button variant="destructive">
               <Link href="/contact">
                 <div className="flex items-center gap-2 text-white">
-                  <PhoneCall className="text-[1.2rem]" />
                   Contact
                 </div>
               </Link>
@@ -83,57 +73,34 @@ const DesktopNavbar = () => {
 
         {/* Mega Menu */}
         <div
-          className={`absolute top-full left-0 w-full bg-gray-800 transition-all duration-300 z-40 ${
+          className={`absolute top-full left-0 w-full backdrop-blur-md transition-all duration-300 z-40 ${
             isProductHover ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
           onMouseEnter={() => setIsProductHover(true)}
           onMouseLeave={() => setIsProductHover(false)}
         >
-          <div className="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="flex flex-col gap-6">
-              <h3 className="text-white font-semibold text-xl">
-                More Products
-              </h3>
-              {moreProducts.map((item, idx) => (
-                <Link href={item.link} key={idx}>
-                  <div
-                    onClick={handleMenuClick}
-                    className="flex gap-4 items-start group"
-                  >
-                    {item.icon}
-                    <div>
-                      <h4 className="text-white font-medium">{item.title}</h4>
-                      <p className="text-white/80 text-sm">
-                        {item.description}
-                      </p>
-                      <span className="text-orange-400 mt-2 flex items-center gap-1 text-sm">
-                        Call to action
-                        <MdOutlineArrowRightAlt className="group-hover:translate-x-1 transition-transform" />
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-            <div className="flex flex-col gap-6">
-              <h3 className="text-white font-semibold text-xl">Ecosystem</h3>
-              {ecoSystem.map((item, idx) => (
-                <Link href={item.link} key={idx}>
-                  <div
-                    onClick={handleMenuClick}
-                    className="flex gap-3 items-start"
-                  >
-                    {item.icon}
-                    <div>
-                      <h4 className="text-white font-medium">{item.title}</h4>
-                      <p className="text-white/80 text-sm">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
+          <div className="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 gap-10">
+            {hoverMenu?.map((menu, i) => (
+              <Link
+                href={menu.href}
+                key={i}
+                className="group block bg-slate-950 shadow-md rounded-2xl overflow-hidden transition-transform hover:shadow-xl"
+              >
+                <div className="relative w-full h-60 overflow-hidden">
+                  <Image
+                    src={menu.image}
+                    alt={menu.name}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="text-lg font-semibold text-white group-hover:text-blue-600 transition">
+                    {menu.name}
+                  </p>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </nav>
