@@ -41,7 +41,7 @@ const GeneratorService = () => {
   return (
     <Container>
       <SectionTitle
-        title="Generator Installation & Maintenance"
+        title="Lifts Installation & Maintenance"
         details="A1 Lifts & Engineering offers reliable generator installation and
         ongoing maintenance services for homes, offices, and industries.
         Whether it's diesel, gas, or hybrid generators, our experienced team
@@ -54,7 +54,7 @@ const GeneratorService = () => {
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {generatorBenefits.map((benefit, index) => (
-          <Card key={index}>
+          <Card data-aos="fade-up" key={index}>
             <CardContent>
               <benefit.icon className="text-primary w-16 h-16" />
               <p className="mt-3">{benefit.title}</p>

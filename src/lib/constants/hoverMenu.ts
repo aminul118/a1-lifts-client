@@ -6,7 +6,7 @@ const hoverMenu = [
   },
   {
     name: "Generator Installation & Maintenance",
-    image: "/assets/images/about/genarator-servising.jpg",
+    image: "/assets/images/services/genarator-service1.jpg",
     href: "/genarator-services",
   },
   {

@@ -24,6 +24,7 @@ const LiftServices = () => {
     <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-12 py-10">
       {liftServices.map((service, i) => (
         <div
+          data-aos="fade-up"
           key={i}
           className="group block bg-white dark:bg-black overflow-hidden transition-transform"
         >

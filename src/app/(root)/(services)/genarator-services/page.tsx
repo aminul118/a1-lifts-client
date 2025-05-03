@@ -1,3 +1,6 @@
+import ServicesForGenarator from "@/components/GenaratorServices/ServicesForGenarator";
+import WhyUsForGenaratorServices from "@/components/GenaratorServices/WhyUsForGenaratorServices";
+
 import SectionBanner from "@/components/ui/SectionBanner";
 
 const GenaratorServices = () => {
@@ -5,8 +8,12 @@ const GenaratorServices = () => {
     <div>
       <SectionBanner
         heading="Generator Installation & Maintenance"
-        backgroundImagePath="/assets/backgrounds/building.png"
+        description="Power your property with expert solutions from A1 Lifts & Engineering"
+        className="text-white"
+        backgroundImagePath="/assets/images/services/genarator-service1.jpg"
       />
+      <WhyUsForGenaratorServices />
+      <ServicesForGenarator />
     </div>
   );
 };

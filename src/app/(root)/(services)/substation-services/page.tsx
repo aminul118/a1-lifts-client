@@ -1,13 +1,14 @@
-import React from "react";
+import SectionBanner from "@/components/ui/SectionBanner";
 
 const SubstationServicesPage = () => {
   return (
     <div>
-      Hi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-      voluptatem, cupiditate quod maiores quis voluptas aperiam a tenetur minima
-      debitis possimus. Autem pariatur nesciunt repellendus odio sint delectus
-      est, quo expedita, nostrum assumenda quos. Obcaecati pariatur ut magnam
-      exercitationem laborum?
+      <SectionBanner
+        heading="Substation Services & Maintenance"
+        description="Power your property with expert solutions from A1 Lifts & Engineering"
+        className="text-white"
+        backgroundImagePath="/assets/backgrounds/electrical-substation.jpeg"
+      />
     </div>
   );
 };
