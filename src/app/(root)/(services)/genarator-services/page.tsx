@@ -12,8 +12,8 @@ const GenaratorServices = () => {
         className="text-white"
         backgroundImagePath="/assets/images/services/genarator-service1.jpg"
       />
-      <WhyUsForGenaratorServices />
       <ServicesForGenarator />
+      <WhyUsForGenaratorServices />
     </div>
   );
 };

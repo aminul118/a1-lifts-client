@@ -10,8 +10,8 @@ const LiftService = () => {
         backgroundImagePath="/assets/backgrounds/elevetor.webp"
         className="text-white"
       />
-      <Benifits />
       <LiftServices />
+      <Benifits />
     </div>
   );
 };
