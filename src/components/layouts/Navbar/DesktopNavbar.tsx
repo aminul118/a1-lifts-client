@@ -88,7 +88,7 @@ const DesktopNavbar = () => {
               <Link
                 href={menu.href}
                 key={i}
-                className="group block bg-slate-950 shadow-md rounded-xl overflow-hidden transition-transform hover:shadow-xl"
+                className="group block bg-slate-800 shadow-md rounded-xl overflow-hidden transition-transform hover:shadow-xl"
               >
                 <div className="relative w-full h-60 overflow-hidden">
                   <Image

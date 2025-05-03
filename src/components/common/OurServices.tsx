@@ -14,7 +14,7 @@ const OurServices = () => {
           <Link
             href={menu.href}
             key={i}
-            className="group block bg-white dark:bg-black overflow-hidden transition-transform "
+            className="group block bg-white dark:bg-slate-800 overflow-hidden transition-transform "
           >
             <div className="relative w-full h-60 2xl:h-72 overflow-hidden">
               <Image

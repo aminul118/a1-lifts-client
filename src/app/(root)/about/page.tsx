@@ -1,6 +1,7 @@
 import MissionVission from "@/components/About/MissionVission";
 import AboutCompany from "@/components/common/AboutCompany";
 import WhyA1Lifts from "@/components/common/WhyA1Lifts";
+import ServicesSection from "@/components/Home/ServicesSection";
 import SectionBanner from "@/components/ui/SectionBanner";
 
 const AboutPage = () => {
@@ -14,6 +15,7 @@ const AboutPage = () => {
       />
       <AboutCompany />
       <MissionVission />
+      <ServicesSection />
       <WhyA1Lifts />
     </>
   );

@@ -6,7 +6,7 @@ const ContactCards = () => {
     <Container>
       <div className="flex flex-col md:flex-row gap-6">
         {/* Phone Card */}
-        <div className="lg:flex flex-1 items-center gap-6 bg-[#111014] text-white rounded-md px-6 py-6 shadow-md">
+        <div className="lg:flex flex-1 items-center gap-6 bg-slate-800 text-white rounded-md px-6 py-6 shadow-md">
           <div className="lg:bg-[#1b1a1f] p-4 rounded-full">
             <Phone className="w-6 h-6 text-white" />
           </div>

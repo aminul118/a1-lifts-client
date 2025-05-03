@@ -72,7 +72,7 @@ const ServicesForGenarator = () => {
         <div
           data-aos="fade-right"
           key={i}
-          className="group block bg-white dark:bg-black overflow-hidden transition-transform"
+          className="group block bg-white dark:bg-slate-800 overflow-hidden transition-transform"
         >
           <div className="relative w-full h-60 2xl:h-72 overflow-hidden">
             <Image
@@ -82,7 +82,7 @@ const ServicesForGenarator = () => {
               className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
             />
           </div>
-          <div className="space-y-2 text-gray-600 dark:text-white/90 p-4">
+          <div className="space-y-2 text-gray-600 dark:text-white/70 p-4">
             {service.details.map((detail, idx) => (
               <div key={idx} className="flex  gap-2">
                 <CheckCircle size={20} className="text-blue-600 shrink-0" />
