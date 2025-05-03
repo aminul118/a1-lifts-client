@@ -36,6 +36,13 @@ const DesktopNavbar = () => {
                 </div>
               </Link>
             </li>
+            <li>
+              <Link href="/products">
+                <div className="flex items-center gap-2 hover:text-blue-500 text-white">
+                  Products
+                </div>
+              </Link>
+            </li>
             <li
               className="relative"
               onMouseEnter={() => setIsProductHover(true)}

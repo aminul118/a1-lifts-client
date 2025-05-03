@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "../ui/Container";
+import { CheckCircle } from "lucide-react";
 
 const generatorServices = [
   {
@@ -42,11 +43,31 @@ const generatorServices = [
       "Complete commissioning and safety testing by certified engineers.",
     ],
   },
+  {
+    service: "Generator Load Management Solutions",
+    image: "/assets/images/services/load-management-genarator.jpg",
+    details: [
+      "Smart load management systems to optimize generator performance.",
+      "Automatic load shedding and prioritization for critical systems.",
+      "Prevention of generator overload and extended equipment lifespan.",
+      "Energy-efficient operation tailored to business and residential needs.",
+    ],
+  },
+  {
+    service: "Generator Rental & Temporary Power Solutions",
+    image: "/assets/images/services/load-management-genarator.jpg",
+    details: [
+      "Short-term and long-term generator rental options for events, construction, and emergencies.",
+      "Wide range of generator capacities available with full installation support.",
+      "Flexible rental plans with 24/7 maintenance and fuel management.",
+      "Ideal for backup during grid outages or seasonal high-power demands.",
+    ],
+  },
 ];
 
 const ServicesForGenarator = () => {
   return (
-    <Container className="grid grid-cols-1  lg:grid-cols-2 gap-6 px-4 md:px-12 py-10">
+    <Container className="grid grid-cols-1  lg:grid-cols-3 gap-6 px-4 md:px-12 py-10">
       {generatorServices.map((service, i) => (
         <div
           data-aos="fade-right"
@@ -61,13 +82,13 @@ const ServicesForGenarator = () => {
               className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
             />
           </div>
-          <div className="p-4">
-            <h3 className="text-xl font-semibold mb-2 text-primary">
-              {service.service}
-            </h3>
-            <p className="text-gray-600 dark:text-white/90">
-              {service.details}
-            </p>
+          <div className="space-y-2 text-gray-600 dark:text-white/90 p-4">
+            {service.details.map((detail, idx) => (
+              <div key={idx} className="flex  gap-2">
+                <CheckCircle size={20} className="text-blue-600 shrink-0" />
+                <p className="leading-snug">{detail}</p>
+              </div>
+            ))}
           </div>
         </div>
       ))}
