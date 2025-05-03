@@ -61,13 +61,10 @@ const DesktopNavbar = () => {
 
           <div className="flex items-center gap-4">
             <ModeToggle />
-            <Button variant="destructive">
-              <Link href="/contact">
-                <div className="flex items-center gap-2 text-white">
-                  Contact
-                </div>
-              </Link>
-            </Button>
+
+            <Link href="/contact">
+              <Button variant="destructive">Contact</Button>
+            </Link>
           </div>
         </div>
 
