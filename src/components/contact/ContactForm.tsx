@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { BsSendFill } from "react-icons/bs";
 import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
 
 // Define the form input types
 interface IFormInput {
@@ -28,10 +29,21 @@ const ContactForm: React.FC = () => {
     formState: { errors },
   } = useForm<IFormInput>();
 
-  const onSubmit: SubmitHandler<IFormInput> = async () => {
+  const onSubmit: SubmitHandler<IFormInput> = async (data) => {
     setLoading(true);
     try {
-      // Send form data to the backend using Axios
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+
       reset();
       Swal.fire({
         title: "Success!",
@@ -39,7 +51,7 @@ const ContactForm: React.FC = () => {
         icon: "success",
       });
     } catch (error) {
-      console.log(error);
+      console.error(error);
       Swal.fire({
         title: "Error",
         text: "Failed to send message. Please try again later.",

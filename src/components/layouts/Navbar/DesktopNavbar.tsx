@@ -79,12 +79,12 @@ const DesktopNavbar = () => {
           onMouseEnter={() => setIsProductHover(true)}
           onMouseLeave={() => setIsProductHover(false)}
         >
-          <div className="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 gap-10">
+          <div className="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 gap-4 2xl:gap-10">
             {hoverMenu?.map((menu, i) => (
               <Link
                 href={menu.href}
                 key={i}
-                className="group block bg-slate-950 shadow-md rounded-2xl overflow-hidden transition-transform hover:shadow-xl"
+                className="group block bg-slate-950 shadow-md rounded-xl overflow-hidden transition-transform hover:shadow-xl"
               >
                 <div className="relative w-full h-60 overflow-hidden">
                   <Image
