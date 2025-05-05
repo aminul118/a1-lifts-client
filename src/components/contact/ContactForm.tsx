@@ -139,11 +139,7 @@ const ContactForm: React.FC = () => {
           </div>
 
           {/* Submit Button */}
-          <Button
-            type="submit"
-            className="mt-4 w-full flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 transition-all"
-            disabled={loading}
-          >
+          <Button type="submit" disabled={loading}>
             {loading ? "Sending..." : "Submit"} <BsSendFill />
           </Button>
         </div>

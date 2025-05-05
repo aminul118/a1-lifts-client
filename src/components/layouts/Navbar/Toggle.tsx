@@ -5,7 +5,11 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 
-export function ModeToggle() {
+type ClassName = {
+  className?: string;
+};
+
+export function ModeToggle({ className }: ClassName) {
   const { setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
 
@@ -22,7 +26,14 @@ export function ModeToggle() {
   };
 
   return (
-    <Button variant="outline" size="icon" onClick={toggleTheme}>
+    <Button
+      variant="outline"
+      size="icon"
+      className={className}
+      onClick={toggleTheme}
+      data-tooltip-id="my-tooltip"
+      data-tooltip-content="Theme Toggle"
+    >
       <Sun
         className={`h-[1.2rem] w-[1.2rem] transition-all ${
           isDark ? "scale-0 rotate-90" : "scale-100 rotate-0"

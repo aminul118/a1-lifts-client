@@ -2,11 +2,12 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { IoIosArrowUp } from "react-icons/io";
-
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "./Toggle";
 import Image from "next/image";
 import hoverMenu from "@/lib/constants/hoverMenu";
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip } from "react-tooltip";
 
 const DesktopNavbar = () => {
   const [isProductHover, setIsProductHover] = useState(false);
@@ -70,7 +71,7 @@ const DesktopNavbar = () => {
             <ModeToggle />
 
             <Link href="/contact">
-              <Button variant="destructive">Contact</Button>
+              <Button variant="outline">Contact</Button>
             </Link>
           </div>
         </div>
@@ -108,6 +109,7 @@ const DesktopNavbar = () => {
           </div>
         </div>
       </nav>
+      <Tooltip id="my-tooltip" />
     </header>
   );
 };

@@ -2,10 +2,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
-
 import { ModeToggle } from "./Toggle";
 import { Menu, X } from "lucide-react";
 import { ecoSystem, moreProducts } from "@/lib/constants/navMenu";
+import { Button } from "@/components/ui/button";
 
 const MobileNavbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
@@ -47,12 +47,9 @@ const MobileNavbar = () => {
         }`}
       >
         <div className="flex justify-end p-4">
-          <button
-            onClick={() => setMobileSidebarOpen(false)}
-            className="text-2xl text-red-500"
-          >
+          <Button variant="destructive" onClick={() => setMobileSidebarOpen(false)}>
             <X />
-          </button>
+          </Button>
         </div>
         <ul className="flex flex-col p-6 gap-4 text-gray-700 dark:text-white/80">
           <li>
@@ -113,7 +110,7 @@ const MobileNavbar = () => {
             </Link>
           </li>
           <li>
-            <ModeToggle />
+            <ModeToggle className="text-black dark:text-white" />
           </li>
         </ul>
       </div>
