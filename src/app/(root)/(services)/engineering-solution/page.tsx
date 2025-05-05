@@ -6,7 +6,7 @@ const EnginerringSolution = () => {
   return (
     <div>
       <SectionBanner
-        heading="Substation Services & Maintenance"
+        heading="Engineering Solution"
         description="Power your property with expert solutions from A1 Lifts & Engineering"
         className="text-white"
         backgroundImagePath="/assets/backgrounds/electrical-substation.jpeg"

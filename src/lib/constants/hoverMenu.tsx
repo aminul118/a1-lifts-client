@@ -16,7 +16,7 @@ const hoverMenu = [
   },
   {
     name: "Engineering Solutions",
-    image: "/assets/images/about/lift-service.png",
+    image: "/assets/images/services/control-automation.jpg",
     href: "/engineering-solution",
   },
 ];

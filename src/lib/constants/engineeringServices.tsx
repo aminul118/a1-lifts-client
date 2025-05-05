@@ -2,48 +2,48 @@ import { Services } from "../types/types";
 
 const engineeringServices: Services[] = [
   {
-    service: "Substation Installation",
-    image: "/assets/images/services/substation-installation.jpeg",
+    service: "Electrical System Design",
+    image: "/assets/images/services/electrical-design.jpg",
     details: [
-      "Design and installation of substations for residential, commercial, and industrial use.",
-      "End-to-end execution including civil, electrical, and commissioning works.",
-      "Compliance with local electrical standards and safety regulations.",
+      "Customized electrical system planning for industrial and commercial setups.",
+      "Load analysis, equipment selection, and layout design.",
+      "Ensuring energy efficiency and regulatory compliance.",
     ],
   },
   {
-    service: "Substation Maintenance",
-    image: "/assets/images/services/substation-maintenance.jpg",
+    service: "Power Distribution Solutions",
+    image: "/assets/images/services/power-distribution.jpg",
     details: [
-      "Routine inspections and preventive maintenance to ensure reliable operation.",
-      "Thermal scanning, oil filtration, and electrical testing services.",
-      "Emergency repair services and fault rectification.",
+      "Design and implementation of power distribution networks.",
+      "Low voltage (LV), medium voltage (MV), and high voltage (HV) systems.",
+      "Reliable and scalable distribution architecture for future expansion.",
     ],
   },
   {
-    service: "Substation Upgrades & Expansion",
-    image: "/assets/images/services/substation-upgrade.jpg",
+    service: "Energy Management & Audit",
+    image: "/assets/images/services/energy-audit.jpg",
     details: [
-      "Upgrade existing substations to enhance capacity and efficiency.",
-      "Addition of transformers, switchgear, or protection systems.",
-      "Integration with backup power systems like generators.",
+      "Detailed energy audits to identify inefficiencies and savings opportunities.",
+      "Power quality analysis and load balancing recommendations.",
+      "Implementation of smart energy-saving technologies and practices.",
     ],
   },
   {
-    service: "Substation Safety Audits",
-    image: "/assets/images/services/substation-safety.jpg",
+    service: "Control & Automation Solutions",
+    image: "/assets/images/services/control-automation.jpg",
     details: [
-      "Complete safety inspections of electrical substations.",
-      "Risk assessment and compliance verification.",
-      "Recommendations for corrective actions and improvements.",
+      "PLC, SCADA, and HMI-based automation for various industrial processes.",
+      "Remote monitoring and control system integration.",
+      "Customized solutions to increase operational efficiency.",
     ],
   },
   {
-    service: "Turnkey Substation Projects",
-    image: "/assets/images/services/substation-turnkey.jpg",
+    service: "Technical Consultancy & Project Management",
+    image: "/assets/images/services/engineering-consultancy.jpg",
     details: [
-      "Complete turnkey solutions from design to commissioning.",
-      "Single point of contact for all engineering, procurement, and construction activities.",
-      "Tailored solutions to meet client-specific voltage and load requirements.",
+      "Professional consultancy for engineering project planning and execution.",
+      "Feasibility studies, documentation, and supervision.",
+      "End-to-end project management ensuring timelines and quality standards.",
     ],
   },
 ];
