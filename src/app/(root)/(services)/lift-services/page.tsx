@@ -1,6 +1,7 @@
+import ServicesCard from "@/components/common/ServicesCard";
 import Benifits from "@/components/LiftServices/Benifits";
-import LiftServices from "@/components/LiftServices/LiftServices";
 import SectionBanner from "@/components/ui/SectionBanner";
+import liftServices from "@/lib/constants/liftServices";
 
 const LiftService = () => {
   return (
@@ -10,7 +11,7 @@ const LiftService = () => {
         backgroundImagePath="/assets/backgrounds/elevetor.webp"
         className="text-white"
       />
-      <LiftServices />
+      <ServicesCard services={liftServices} />
       <Benifits />
     </div>
   );

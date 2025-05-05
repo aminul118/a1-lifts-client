@@ -1,7 +1,7 @@
-import ServicesForGenarator from "@/components/GenaratorServices/ServicesForGenarator";
+import ServicesCard from "@/components/common/ServicesCard";
 import WhyUsForGenaratorServices from "@/components/GenaratorServices/WhyUsForGenaratorServices";
-
 import SectionBanner from "@/components/ui/SectionBanner";
+import generatorServices from "@/lib/constants/generatorServices";
 
 const GenaratorServices = () => {
   return (
@@ -12,7 +12,7 @@ const GenaratorServices = () => {
         className="text-white"
         backgroundImagePath="/assets/images/services/genarator-service1.jpg"
       />
-      <ServicesForGenarator />
+      <ServicesCard services={generatorServices} />
       <WhyUsForGenaratorServices />
     </div>
   );

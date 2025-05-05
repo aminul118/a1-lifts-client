@@ -1,4 +1,6 @@
+import ServicesCard from "@/components/common/ServicesCard";
 import SectionBanner from "@/components/ui/SectionBanner";
+import substrationServices from "@/lib/constants/substrationServices";
 
 const SubstationServicesPage = () => {
   return (
@@ -9,6 +11,7 @@ const SubstationServicesPage = () => {
         className="text-white"
         backgroundImagePath="/assets/backgrounds/electrical-substation.jpeg"
       />
+      <ServicesCard services={substrationServices} />
     </div>
   );
 };
