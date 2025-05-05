@@ -21,3 +21,9 @@ export type Banner = {
   className?: string;
   backgroundImagePath?: string;
 };
+
+export type Services = {
+  service: string;
+  image: string;
+  details: string[];
+};

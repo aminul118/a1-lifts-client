@@ -1,8 +1,4 @@
-export type Services = {
-  service: string;
-  image: string;
-  details: string[];
-};
+import { Services } from "../types/types";
 
 const engineeringServices: Services[] = [
   {

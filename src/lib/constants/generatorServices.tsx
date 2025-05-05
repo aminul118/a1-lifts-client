@@ -1,4 +1,6 @@
-const generatorServices = [
+import { Services } from "../types/types";
+
+const generatorServices: Services[] = [
   {
     service: "Generator Maintenance & Health Checks",
     image: "/assets/images/services/genarator-service1.jpg",
