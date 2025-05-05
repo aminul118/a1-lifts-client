@@ -1,7 +1,8 @@
 import { Children } from "@/lib/types/types";
-import Footer from "@/components/layouts/Footer/Footer";
+
 import DesktopNavbar from "@/components/layouts/Navbar/DesktopNavbar";
 import MobileNavbar from "@/components/layouts/Navbar/MobileNavbar";
+import Footer from "@/components/layouts/Footer/Footer";
 
 const MainLayout = ({ children }: Children) => {
   return (

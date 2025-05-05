@@ -6,8 +6,6 @@ import { Button } from "@/components/ui/button";
 import { ModeToggle } from "./Toggle";
 import Image from "next/image";
 import hoverMenu from "@/lib/constants/hoverMenu";
-import "react-tooltip/dist/react-tooltip.css";
-import { Tooltip } from "react-tooltip";
 
 const DesktopNavbar = () => {
   const [isProductHover, setIsProductHover] = useState(false);
@@ -109,7 +107,6 @@ const DesktopNavbar = () => {
           </div>
         </div>
       </nav>
-      <Tooltip id="my-tooltip" />
     </header>
   );
 };

@@ -1,93 +1,96 @@
+import Image from "next/image";
 import Link from "next/link";
+import { FaFacebook } from "react-icons/fa";
+import Copiright from "./Copiright";
+import { Button } from "@/components/ui/button";
 
-const Footer = () => {
+// Social icons and URLs
+const socialLinks = [{ icon: <FaFacebook />, href: "#" }];
+
+// Footer link sections
+const footerLinks = [
+  {
+    title: "Quick Links",
+    links: [
+      { label: "Home", href: "/" },
+      { label: "About us", href: "/about" },
+      { label: "Products", href: "/products" },
+      { label: "Vision", href: "/vision" },
+      { label: "Contact", href: "/contact" },
+    ],
+  },
+  {
+    title: "Services",
+    links: [
+      { label: "Lift Installation", href: "/lift-services" },
+      { label: "Genarator Installation", href: "/genarator-services" },
+      { label: "Substation Installation", href: "/substation-services" },
+      { label: "Enginnering Solution", href: "/engineering-solution" },
+    ],
+  },
+];
+
+export default function Footer() {
   return (
-    <footer className="bg-black text-gray-300 py-12">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
-        {/* Logo and Description */}
+    <footer className="bg-[#111] text-white py-10 px-6 md:px-20">
+      <div className=" grid grid-cols-1 lg:flex lg:justify-between container mx-auto">
+        {/* Logo and Socials */}
         <div>
-          <p className="text-sm leading-relaxed">
+          <Image
+            src="/logo.png"
+            alt="SPF Logo"
+            width={64}
+            height={64}
+            className="mb-2"
+          />
+          <p className=" mb-4">
             Bringing you the best solutions for your business. <br />
             Connect with us for a seamless experience.
           </p>
-        </div>
-
-        {/* Useful Links */}
-        <div>
-          <h2 className="text-xl font-semibold text-white mb-4">Quick Links</h2>
-          <ul className="space-y-3 text-sm">
-            <li>
-              <Link
-                href="/"
-                className="hover:text-white transition-colors duration-200"
-              >
-                Home
+          <div className="flex flex-wrap gap-3">
+            {socialLinks.map((item, idx) => (
+              <Link key={idx} href={item.href}>
+                <Button variant="outline">{item.icon}</Button>
               </Link>
-            </li>
-            <li>
-              <a
-                href="/about"
-                className="hover:text-white transition-colors duration-200"
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="/services"
-                className="hover:text-white transition-colors duration-200"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="/contact"
-                className="hover:text-white transition-colors duration-200"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
+            ))}
+          </div>
         </div>
 
-        {/* Contact Info */}
-        <div>
-          <h2 className="text-xl font-semibold text-white mb-4">Contact Us</h2>
-          <ul className="space-y-3 text-sm">
-            <li>
-              <span className="block">Email:</span>
-              <a
-                href="mailto:info@example.com"
-                className="hover:text-white transition-colors duration-200 block"
-              >
-                info@example.com
-              </a>
-            </li>
-            <li>
-              <span className="block">Phone:</span>
-              <a
-                href="tel:+1234567890"
-                className="hover:text-white transition-colors duration-200 block"
-              >
-                +1 234 567 890
-              </a>
-            </li>
-            <li>
-              <span className="block">Address:</span>
-              <span>1234 Street Name, City, Country</span>
-            </li>
-          </ul>
-        </div>
+        {/* Footer Links */}
+        {footerLinks.map((section, idx) => (
+          <div key={idx}>
+            <h3 className="font-semibold mb-3">{section.title}</h3>
+            <ul className="space-y-2 mt-4">
+              {section.links.map((link, i) => (
+                <li key={i}>
+                  <Link
+                    href={link.href}
+                    className="hover:text-blue-500 hover:underline"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
 
-      {/* Bottom Footer */}
-      <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500">
-        &copy; {new Date().getFullYear()} A1 Lifts and Engineering. All rights
-        reserved.
+      <hr className="my-8 border-[#333]" />
+
+      {/* Bottom Bar */}
+      <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4 container mx-auto">
+        <Copiright />
+
+        <div className="flex gap-4">
+          <Link href="#" className="hover:text-white transition">
+            Privacy Policy
+          </Link>
+          <Link href="#" className="hover:text-white transition">
+            Terms of Use
+          </Link>
+        </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

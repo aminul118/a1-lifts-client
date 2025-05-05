@@ -31,8 +31,6 @@ export function ModeToggle({ className }: ClassName) {
       size="icon"
       className={className}
       onClick={toggleTheme}
-      data-tooltip-id="my-tooltip"
-      data-tooltip-content="Theme Toggle"
     >
       <Sun
         className={`h-[1.2rem] w-[1.2rem] transition-all ${
