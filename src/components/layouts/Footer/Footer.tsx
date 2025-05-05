@@ -1,34 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebook } from "react-icons/fa";
 import Copiright from "./Copiright";
 import { Button } from "@/components/ui/button";
-
-// Social icons and URLs
-const socialLinks = [{ icon: <FaFacebook />, href: "#" }];
-
-// Footer link sections
-const footerLinks = [
-  {
-    title: "Quick Links",
-    links: [
-      { label: "Home", href: "/" },
-      { label: "About us", href: "/about" },
-      { label: "Products", href: "/products" },
-      { label: "Vision", href: "/vision" },
-      { label: "Contact", href: "/contact" },
-    ],
-  },
-  {
-    title: "Services",
-    links: [
-      { label: "Lift Installation", href: "/lift-services" },
-      { label: "Genarator Installation", href: "/genarator-services" },
-      { label: "Substation Installation", href: "/substation-services" },
-      { label: "Enginnering Solution", href: "/engineering-solution" },
-    ],
-  },
-];
+import { footerLinks, socialLinks } from "@/lib/constants/footerLinks";
 
 export default function Footer() {
   return (
