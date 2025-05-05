@@ -7,7 +7,7 @@ import SectionTitle from "../ui/SectionTitle";
 
 const OurServices = () => {
   return (
-    <Container className="2xl:h-[800px]">
+    <Container backgroundColor="2xl:h-[800px]">
       <SectionTitle title="Our Services" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-10">
         {hoverMenu?.map((menu, i) => (

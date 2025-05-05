@@ -31,7 +31,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <Container>
+    <Container backgroundColor=" 2xl:h-[1000px] ">
       <div className="text-center mb-12">
         <p className="text-gray-400 uppercase text-sm font-semibold tracking-wide">
           Our Services

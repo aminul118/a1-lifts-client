@@ -11,9 +11,11 @@ const Container = ({
   backgroundColor,
 }: classNameProps) => {
   return (
-    <section className={backgroundColor}>
+    <section
+      className={`${backgroundColor}  bg-cover bg-center flex flex-col justify-center`}
+    >
       <div
-        className={`py-8 lg:py-14 xl:py-16 2xl:py-24 px-2 container mx-auto flex flex-col justify-center ${className}`}
+        className={`py-8 lg:py-14 xl:py-16 2xl:py-24 px-2 container mx-auto ${className}`}
       >
         {children}
       </div>

@@ -20,7 +20,7 @@ const ContactCards = () => {
         </div>
 
         {/* Email Card */}
-        <div className="lg:flex flex-1 items-center gap-6 bg-green-600 text-white rounded-md px-6 py-6 shadow-md h-40">
+        <div className="lg:flex flex-1 items-center gap-6 bg-slate-900 text-white rounded-md px-6 py-6 shadow-md h-40">
           <div className="lg:bg-white  bg-opacity-10 p-4 rounded-full">
             <Mail className="w-6 h-6 lg:text-green-600" />
           </div>

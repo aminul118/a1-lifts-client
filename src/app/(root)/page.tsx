@@ -4,16 +4,18 @@ import ContactCards from "@/components/Home/ContactCards";
 import FAQ from "@/components/Home/FAQ";
 import HeroSlider from "@/components/Home/HeroSlider";
 import ServicesSection from "@/components/Home/ServicesSection";
+import WorkSteps from "@/components/Home/WorkSteps";
 
 const HomePage = () => {
   return (
     <>
       <HeroSlider />
       <OurServices />
-      <ContactCards />
       <ServicesSection />
       <WhyA1Lifts />
+      <WorkSteps />
       <FAQ />
+      <ContactCards />
     </>
   );
 };

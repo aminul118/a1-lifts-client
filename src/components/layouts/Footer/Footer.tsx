@@ -33,7 +33,7 @@ const footerLinks = [
 export default function Footer() {
   return (
     <footer className="bg-[#111] text-white py-10 px-6 md:px-20">
-      <div className=" grid grid-cols-1 lg:flex lg:justify-between container mx-auto">
+      <div className=" grid grid-cols-1 gap-12 lg:flex lg:justify-between container mx-auto">
         {/* Logo and Socials */}
         <div>
           <Image
@@ -83,10 +83,16 @@ export default function Footer() {
         <Copiright />
 
         <div className="flex gap-4">
-          <Link href="#" className="hover:text-white transition">
+          <Link
+            href="/privacy-policy"
+            className="hover:text-blue-500 hover:underline"
+          >
             Privacy Policy
           </Link>
-          <Link href="#" className="hover:text-white transition">
+          <Link
+            href="/terms-of-use"
+            className="hover:text-blue-500 hover:underline"
+          >
             Terms of Use
           </Link>
         </div>
