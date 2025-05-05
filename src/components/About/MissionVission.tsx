@@ -6,7 +6,7 @@ import { Card, CardContent } from "../ui/card";
 
 const MissionVission = () => {
   return (
-    <Container className="lg:h-[600px]">
+    <Container backgroundColor="lg:h-[600px]">
       <SectionTitle
         title="Our Mission & Vision"
         details=" Driving innovation, safety, and sustainability in engineering
