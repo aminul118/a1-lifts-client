@@ -1,4 +1,5 @@
 import MissionVission from "@/components/About/MissionVission";
+import ProfessionalService from "@/components/About/ProfessionalService";
 import AboutCompany from "@/components/common/AboutCompany";
 import WhyA1Lifts from "@/components/common/WhyA1Lifts";
 import ServicesSection from "@/components/Home/ServicesSection";
@@ -16,6 +17,7 @@ const AboutPage = () => {
       <AboutCompany />
       <MissionVission />
       <ServicesSection />
+      <ProfessionalService />
       <WhyA1Lifts />
     </>
   );
