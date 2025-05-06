@@ -1,8 +1,9 @@
+import AboutUs from "@/components/About/AboutUs";
 import MissionVission from "@/components/About/MissionVission";
+import OurManagementTeam from "@/components/About/OurManagementTeam";
 import ProfessionalService from "@/components/About/ProfessionalService";
 import AboutCompany from "@/components/common/AboutCompany";
 import WhyA1Lifts from "@/components/common/WhyA1Lifts";
-import ServicesSection from "@/components/Home/ServicesSection";
 import SectionBanner from "@/components/ui/SectionBanner";
 
 const AboutPage = () => {
@@ -15,8 +16,9 @@ const AboutPage = () => {
         className="text-white"
       />
       <AboutCompany />
+      <AboutUs />
       <MissionVission />
-      <ServicesSection />
+      <OurManagementTeam />
       <ProfessionalService />
       <WhyA1Lifts />
     </>

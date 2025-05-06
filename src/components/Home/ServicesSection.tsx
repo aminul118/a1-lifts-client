@@ -23,6 +23,7 @@ const ServicesSection = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <div
+            data-aos="fade-up"
             key={index}
             className="group bg-white dark:bg-slate-800 shadow-md overflow-hidden transition-shadow hover:shadow-lg rounded-md"
           >

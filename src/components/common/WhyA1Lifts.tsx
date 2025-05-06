@@ -12,7 +12,7 @@ const WhyA1Lifts = () => {
             data-aos="fade-left"
             className="text-2xl sm:text-3xl font-bold mb-4"
           >
-            Why Digital Twin Energy LLC?
+            Why A1 Lifts & Engineering Solution?
           </h2>
           <p
             data-aos="fade-right"
