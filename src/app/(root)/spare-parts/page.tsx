@@ -1,6 +1,6 @@
 
 
-const VisionPage = () => {
+const SpareParts= () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const VisionPage = () => {
     );
 };
 
-export default VisionPage;
+export default SpareParts;

@@ -57,9 +57,9 @@ const DesktopNavbar = () => {
               </div>
             </li>
             <li>
-              <Link href="/vision">
+              <Link href="/spare-parts">
                 <div className="flex items-center gap-2 hover:text-blue-500 text-white">
-                  Vision
+                  Spare Parts
                 </div>
               </Link>
             </li>

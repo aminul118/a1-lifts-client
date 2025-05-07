@@ -47,7 +47,10 @@ const MobileNavbar = () => {
         }`}
       >
         <div className="flex justify-end p-4">
-          <Button variant="destructive" onClick={() => setMobileSidebarOpen(false)}>
+          <Button
+            variant="destructive"
+            onClick={() => setMobileSidebarOpen(false)}
+          >
             <X />
           </Button>
         </div>
@@ -100,8 +103,11 @@ const MobileNavbar = () => {
             </ul>
           )}
           <li>
-            <Link href="/vision" onClick={() => setMobileSidebarOpen(false)}>
-              Vision
+            <Link
+              href="/spare-parts"
+              onClick={() => setMobileSidebarOpen(false)}
+            >
+              Spare Parts
             </Link>
           </li>
           <li>
