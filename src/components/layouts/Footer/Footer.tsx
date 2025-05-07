@@ -6,7 +6,7 @@ import { footerLinks, socialLinks } from "@/lib/constants/footerLinks";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#111] text-white py-10 px-6 md:px-20">
+    <footer className="bg-black py-10 px-6 md:px-20 text-white/90">
       <div className=" grid grid-cols-1 gap-12 lg:flex lg:justify-between container mx-auto">
         {/* Logo and Socials */}
         <div>
@@ -22,7 +22,7 @@ export default function Footer() {
             Connect with us for a seamless experience.
           </p>
           <div className="flex flex-wrap gap-3">
-            {socialLinks.map((item, idx) => (
+            {socialLinks?.map((item, idx) => (
               <Link key={idx} href={item.href}>
                 <Button variant="outline">{item.icon}</Button>
               </Link>
@@ -31,17 +31,17 @@ export default function Footer() {
         </div>
 
         {/* Footer Links */}
-        {footerLinks.map((section, idx) => (
+        {footerLinks?.map((section, idx) => (
           <div key={idx}>
-            <h3 className="font-semibold mb-3">{section.title}</h3>
+            <h3 className="font-semibold mb-3">{section?.title}</h3>
             <ul className="space-y-2 mt-4">
-              {section.links.map((link, i) => (
+              {section?.links?.map((link, i) => (
                 <li key={i}>
                   <Link
-                    href={link.href}
+                    href={link?.href}
                     className="hover:text-blue-500 hover:underline"
                   >
-                    {link.label}
+                    {link?.label}
                   </Link>
                 </li>
               ))}
