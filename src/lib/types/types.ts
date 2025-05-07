@@ -27,3 +27,13 @@ export type Services = {
   image: string;
   details: string[];
 };
+
+export type Slider = {
+  id: number;
+  img: string;
+  title: string;
+  class: string;
+  description: string;
+  url: string;
+  button_text: string;
+};

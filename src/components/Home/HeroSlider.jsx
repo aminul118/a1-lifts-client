@@ -6,31 +6,10 @@ import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import Link from "next/link";
 import "@/styles/HeroSlider.css";
+import { Button } from "../ui/button";
+import heroSliderData from "@/lib/constants/heroSliderData";
 
 const HeroSlider = () => {
-  const images = [
-    {
-      id: 1,
-      img: "/assets/backgrounds/banner1.jpg",
-      title: "Elevate Your Shipping Experience",
-      class: "text-white",
-      description:
-        "When it comes to delivering your goods, trust matters. At Swift Courier, we specialize in providing seamless shipping solutions tailored to meet your business needs.",
-      url: "/dashboard/book-percel",
-      button: "Book Your Percel",
-    },
-    {
-      id: 2,
-      img: "/assets/backgrounds/banner2.png",
-      title: "Fast Delivery Services",
-      class: "text-white",
-      description:
-        "When it comes to delivering your goods, trust matters. At Swift Courier, we specialize in providing seamless shipping solutions tailored to meet your business needs.",
-      url: "/dashboard/book-percel",
-      button: "Gift Send by US",
-    },
-  ];
-
   return (
     <Swiper
       slidesPerView={1}
@@ -47,7 +26,7 @@ const HeroSlider = () => {
       modules={[Pagination, Navigation, Autoplay]}
       className="mySwiper"
     >
-      {images?.map((item) => (
+      {heroSliderData?.map((item) => (
         <SwiperSlide key={item.id}>
           <div
             className="relative w-full h-[350px] lg:h-[500px] 2xl:h-[750px] bg-cover bg-center"
@@ -65,11 +44,8 @@ const HeroSlider = () => {
                   {item.description}
                 </p>
 
-                <Link
-                  href={item.url}
-                  className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-6 rounded inline-block text-center"
-                >
-                  {item.button}
+                <Link href={item.url}>
+                  <Button variant="outline"> {item?.button_text}</Button>
                 </Link>
               </div>
             </div>

@@ -22,7 +22,7 @@ const OurManagementTeam = () => {
                   alt={team.details}
                   width={160}
                   height={160}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
               <h3 className="text-lg font-semibold text-orange-500">
