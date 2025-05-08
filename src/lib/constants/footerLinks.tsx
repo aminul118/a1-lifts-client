@@ -15,6 +15,14 @@ const footerLinks = [
     ],
   },
   {
+    title: "Products",
+    links: [
+      { label: "Lifts", href: "/lifts" },
+      { label: "Genarators", href: "/genarators" },
+      { label: "Substations", href: "/substations" },
+    ],
+  },
+  {
     title: "Services",
     links: [
       { label: "Lift Installation", href: "/lift-services" },
