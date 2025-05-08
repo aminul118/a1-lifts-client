@@ -4,12 +4,16 @@ import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
 import { ModeToggle } from "./Toggle";
 import { Menu, X } from "lucide-react";
-import { ecoSystem, moreProducts } from "@/lib/constants/navMenu";
 import { Button } from "@/components/ui/button";
+import {
+  productsHoverMenu,
+  servicesHoverMenu,
+} from "@/lib/constants/hoverMenu";
 
 const MobileNavbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [isMegaMenuCollapse, setIsMegaMenuCollapse] = useState(false);
+  const [isProductMenuCollapse, setIsProductMenuCollapse] = useState(false);
 
   // Close sidebar on Escape key
   useEffect(() => {
@@ -65,6 +69,32 @@ const MobileNavbar = () => {
               About
             </Link>
           </li>
+          <li
+            onClick={() => setIsProductMenuCollapse(!isProductMenuCollapse)}
+            className="cursor-pointer flex justify-between items-center"
+          >
+            Products
+            <IoIosArrowDown
+              className={`transition-transform ${
+                isProductMenuCollapse ? "rotate-180" : ""
+              }`}
+            />
+          </li>
+
+          {isProductMenuCollapse && (
+            <ul className="ml-4 flex flex-col gap-2 text-sm text-gray-600 dark:text-white/80">
+              {productsHoverMenu.map((product, idx) => (
+                <li key={idx}>
+                  <Link
+                    href={product.href}
+                    onClick={() => setMobileSidebarOpen(false)}
+                  >
+                    {product.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
 
           <li
             onClick={() => setIsMegaMenuCollapse(!isMegaMenuCollapse)}
@@ -80,23 +110,13 @@ const MobileNavbar = () => {
 
           {isMegaMenuCollapse && (
             <ul className="ml-4 flex flex-col gap-2 text-sm text-gray-600 dark:text-white/80 ">
-              {moreProducts.map((product, idx) => (
+              {servicesHoverMenu.map((product, idx) => (
                 <li key={idx}>
                   <Link
-                    href={product.link}
+                    href={product.href}
                     onClick={() => setMobileSidebarOpen(false)}
                   >
-                    {product.title}
-                  </Link>
-                </li>
-              ))}
-              {ecoSystem.map((eco, idx) => (
-                <li key={idx}>
-                  <Link
-                    href={eco.link}
-                    onClick={() => setMobileSidebarOpen(false)}
-                  >
-                    {eco.title}
+                    {product.name}
                   </Link>
                 </li>
               ))}
