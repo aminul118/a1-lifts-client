@@ -5,9 +5,13 @@ import { IoIosArrowUp } from "react-icons/io";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "./Toggle";
 import Image from "next/image";
-import hoverMenu from "@/lib/constants/hoverMenu";
+import {
+  productsHoverMenu,
+  servicesHoverMenu,
+} from "@/lib/constants/hoverMenu";
 
 const DesktopNavbar = () => {
+  const [isServicesHover, setisServicesHover] = useState(false);
   const [isProductHover, setIsProductHover] = useState(false);
 
   return (
@@ -35,23 +39,32 @@ const DesktopNavbar = () => {
                 </div>
               </Link>
             </li>
-            <li>
-              <Link href="/products">
-                <div className="flex items-center gap-2 hover:text-blue-500 text-white">
-                  Products
-                </div>
-              </Link>
-            </li>
             <li
               className="relative"
               onMouseEnter={() => setIsProductHover(true)}
               onMouseLeave={() => setIsProductHover(false)}
             >
+              <Link href="/products">
+                <div className="flex items-center gap-2 cursor-pointer hover:text-blue-500 text-white">
+                  Products
+                  <IoIosArrowUp
+                    className={`transition-transform ${
+                      isProductHover && "rotate-180"
+                    }`}
+                  />
+                </div>
+              </Link>
+            </li>
+            <li
+              className="relative"
+              onMouseEnter={() => setisServicesHover(true)}
+              onMouseLeave={() => setisServicesHover(false)}
+            >
               <div className="flex items-center gap-2 cursor-pointer hover:text-blue-500 text-white">
                 Services
                 <IoIosArrowUp
                   className={`transition-transform ${
-                    isProductHover && "rotate-180"
+                    isServicesHover && "rotate-180"
                   }`}
                 />
               </div>
@@ -74,7 +87,7 @@ const DesktopNavbar = () => {
           </div>
         </div>
 
-        {/* Mega Menu */}
+        {/* Mega Menu for Products*/}
         <div
           className={`absolute top-full left-0 w-full backdrop-blur-md transition-all duration-300 z-40 ${
             isProductHover ? "opacity-100 visible" : "opacity-0 invisible"
@@ -82,8 +95,41 @@ const DesktopNavbar = () => {
           onMouseEnter={() => setIsProductHover(true)}
           onMouseLeave={() => setIsProductHover(false)}
         >
+          <div className="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 2xl:gap-10">
+            {productsHoverMenu?.map((menu, i) => (
+              <Link
+                href={menu.href}
+                key={i}
+                className="group block bg-slate-800 shadow-md rounded-xl overflow-hidden transition-transform hover:shadow-xl"
+              >
+                <div className="relative w-full h-60 overflow-hidden">
+                  <Image
+                    src={menu.image}
+                    alt={menu.name}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105 bg-slate-900"
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="text-lg font-semibold text-white group-hover:text-blue-600 transition">
+                    {menu.name}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Mega Menu for services*/}
+        <div
+          className={`absolute top-full left-0 w-full backdrop-blur-md transition-all duration-300 z-40 ${
+            isServicesHover ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
+          onMouseEnter={() => setisServicesHover(true)}
+          onMouseLeave={() => setisServicesHover(false)}
+        >
           <div className="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 gap-4 2xl:gap-10">
-            {hoverMenu?.map((menu, i) => (
+            {servicesHoverMenu?.map((menu, i) => (
               <Link
                 href={menu.href}
                 key={i}

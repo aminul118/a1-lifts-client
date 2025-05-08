@@ -1,4 +1,4 @@
-const hoverMenu = [
+const servicesHoverMenu = [
   {
     name: "Lifts Installation & Maintenance",
     image: "/assets/images/about/lift-service.png",
@@ -21,4 +21,22 @@ const hoverMenu = [
   },
 ];
 
-export default hoverMenu;
+const productsHoverMenu = [
+  {
+    name: "Lifts ",
+    image: "/assets/images/productMenu/elevator.jpg",
+    href: "/lift-services",
+  },
+  {
+    name: "Generator ",
+    image: "/assets/images/productMenu/genarator.png",
+    href: "/genarator-services",
+  },
+  {
+    name: "Substation",
+    image: "/assets/images/about/substation-installed.jpg",
+    href: "/substation-services",
+  },
+];
+
+export { servicesHoverMenu, productsHoverMenu };

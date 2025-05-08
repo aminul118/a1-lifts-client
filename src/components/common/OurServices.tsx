@@ -1,16 +1,16 @@
-import hoverMenu from "@/lib/constants/hoverMenu";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Container from "../ui/Container";
 import SectionTitle from "../ui/SectionTitle";
+import { servicesHoverMenu } from "@/lib/constants/hoverMenu";
 
 const OurServices = () => {
   return (
     <Container backgroundColor="2xl:h-[800px]">
       <SectionTitle title="Our Services" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-10">
-        {hoverMenu?.map((menu, i) => (
+        {servicesHoverMenu?.map((menu, i) => (
           <Link
             href={menu.href}
             key={i}
