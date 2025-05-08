@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Container from "../ui/Container";
 import { CheckCircle } from "lucide-react";
-import { Services } from "@/lib/constants/liftServices";
+import { Services } from "@/lib/types/types";
 
 interface ServicesCardProps {
   services: Services[];
