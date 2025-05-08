@@ -25,17 +25,17 @@ const productsHoverMenu = [
   {
     name: "Lifts ",
     image: "/assets/images/productMenu/elevator.jpg",
-    href: "/lift-services",
+    href: "/lifts",
   },
   {
     name: "Generator ",
     image: "/assets/images/productMenu/genarator.png",
-    href: "/genarator-services",
+    href: "/genarators",
   },
   {
     name: "Substation",
     image: "/assets/images/about/substation-installed.jpg",
-    href: "/substation-services",
+    href: "/substations",
   },
 ];
 
