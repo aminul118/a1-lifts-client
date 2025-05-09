@@ -16,7 +16,7 @@ const RootLayout = ({ children }: Children) => {
       <body className={poppins.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
