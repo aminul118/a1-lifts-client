@@ -54,12 +54,8 @@ const WhyUsForGenaratorServices = () => {
     <Container>
       <SectionTitle title="Benifit for choosing us" />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {features.map((feature, idx) => (
-          <Card
-            data-aos="fade-up"
-            key={idx}
-            className="p-6 flex flex-col items-start gap-4 shadow-md rounded-2xl"
-          >
+        {features?.map((feature, idx) => (
+          <Card data-aos="fade-up" key={idx} className="p-6 ">
             <feature.icon className="text-primary w-16 h-16" />
             <h3 className="text-xl font-semibold">{feature.title}</h3>
             <CardContent className="p-0 text-muted-foreground">

@@ -1,9 +1,11 @@
 "use client";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import "swiper/css/effect-fade";
+import { EffectFade, Pagination, Navigation, Autoplay } from "swiper/modules";
 import Link from "next/link";
 import "@/styles/HeroSlider.css";
 import { Button } from "../ui/button";
@@ -15,15 +17,16 @@ const HeroSlider = () => {
       slidesPerView={1}
       spaceBetween={30}
       loop={true}
+      effect="fade"
       autoplay={{
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: false,
       }}
       pagination={{
         clickable: true,
       }}
       navigation={true}
-      modules={[Pagination, Navigation, Autoplay]}
+      modules={[EffectFade, Pagination, Navigation, Autoplay]}
       className="mySwiper"
     >
       {heroSliderData?.map((item) => (
@@ -32,10 +35,9 @@ const HeroSlider = () => {
             className="relative w-full h-[350px] lg:h-[500px] 2xl:h-[750px] bg-cover bg-center"
             style={{ backgroundImage: `url(${item?.img})` }}
           >
-            {/* Overlay content */}
             <div className="absolute inset-0 bg-black/50 bg-opacity-20 flex items-center">
               <div
-                className={`w-full max-w-3xl mx-auto  flex flex-col justify-center items-center text-center px-4 ${item?.class}`}
+                className={`w-full max-w-3xl mx-auto flex flex-col justify-center items-center text-center px-4 ${item?.class}`}
               >
                 <h2 className="text-2xl md:text-4xl font-bold mb-4">
                   {item.title}

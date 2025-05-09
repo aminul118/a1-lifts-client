@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "../ui/Container";
 import { CheckCircle } from "lucide-react";
 import { Services } from "@/lib/types/types";
+import { Card } from "../ui/card";
 
 interface ServicesCardProps {
   services: Services[];
@@ -9,12 +10,12 @@ interface ServicesCardProps {
 
 const ServicesCard = ({ services }: ServicesCardProps) => {
   return (
-    <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-12 py-10">
+    <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  py-10">
       {services?.map((service, i) => (
-        <div
+        <Card
           data-aos="fade-up"
           key={i}
-          className="group block bg-white dark:bg-slate-800 overflow-hidden transition-transform"
+          className="group block bg-white dark:bg-slate-800 overflow-hidden transition-transform py-0"
         >
           <div className="relative w-full h-60 2xl:h-72 overflow-hidden">
             <Image
@@ -37,7 +38,7 @@ const ServicesCard = ({ services }: ServicesCardProps) => {
               ))}
             </div>
           </div>
-        </div>
+        </Card>
       ))}
     </Container>
   );
