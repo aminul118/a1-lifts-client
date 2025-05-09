@@ -35,7 +35,7 @@ const WorkSteps = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {steps?.map((step, idx) => (
           <Card key={idx}>
-            <CardContent className="py-8 flex flex-col items-center space-y-4">
+            <CardContent className="py-8 flex flex-col items-center space-y-4 text-center">
               {step.icon}
               <h4 className="text-lg font-semibold">{step.title}</h4>
               <p className="text-sm text-gray-500">{step.desc}</p>

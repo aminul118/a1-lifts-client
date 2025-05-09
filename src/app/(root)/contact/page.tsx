@@ -1,10 +1,16 @@
 import ContactUs from "@/components/contact/ContactUs";
+import SectionBanner from "@/components/ui/SectionBanner";
 
 const ContactPage = () => {
   return (
-    <div className="overflow-x-hidden">
+    <>
+      <SectionBanner
+        heading="Contact with us"
+        backgroundImagePath="/assets/backgrounds/contact.png"
+        className="text-white"
+      />
       <ContactUs />
-    </div>
+    </>
   );
 };
 
