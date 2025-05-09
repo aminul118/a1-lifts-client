@@ -8,7 +8,7 @@ const ProductsCard = ({ category }: { category: string }) => {
     .filter((item) => item.title === category.toLowerCase())
     .flatMap((item) => item.products);
   return (
-    <Container className="grid grid-cols-4 gap-6">
+    <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {products.map((product, i) => (
         <Card key={i}>
           <CardContent>
@@ -25,5 +25,4 @@ const ProductsCard = ({ category }: { category: string }) => {
     </Container>
   );
 };
-
 export default ProductsCard;
