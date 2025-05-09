@@ -1,3 +1,4 @@
+import ProductsCard from "@/components/Products/ProductCard";
 import SectionBanner from "@/components/ui/SectionBanner";
 
 const LiftsPage = () => {
@@ -8,6 +9,7 @@ const LiftsPage = () => {
         className="text-white"
         backgroundImagePath="/assets/backgrounds/electrical-substation.jpeg"
       />
+      <ProductsCard category="lift" />
     </div>
   );
 };
