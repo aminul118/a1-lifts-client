@@ -6,6 +6,14 @@ export type Params = {
   params: Promise<{ id: string }>;
 };
 
+export type MetaProps = {
+  title: string;
+  description: string;
+  keywords: string[];
+  image?: string;
+  url?: string;
+};
+
 export interface TypewriterProps {
   words: string[];
   loop?: number;
