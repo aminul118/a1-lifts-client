@@ -11,7 +11,7 @@ export type MetaProps = {
   description: string;
   keywords: string[];
   image?: string;
-  url?: string;
+  path?: string;
 };
 
 export interface TypewriterProps {

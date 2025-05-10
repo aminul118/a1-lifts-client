@@ -5,6 +5,33 @@ import ProfessionalService from "@/components/About/ProfessionalService";
 import AboutCompany from "@/components/common/AboutCompany";
 import WhyA1Lifts from "@/components/common/WhyA1Lifts";
 import SectionBanner from "@/components/ui/SectionBanner";
+import { generateMetaTags } from "@/lib/genarateMetaTags";
+import { Metadata } from "next";
+
+//>> SEO Start
+
+export const metadata: Metadata = generateMetaTags({
+  title: "About A1 Lifts and Engineering | Leading Lift Company in Bangladesh",
+  description:
+    "Learn more about A1 Lifts and Engineering — a trusted name in Bangladesh for elevators, escalators, generators, and substations. Discover our mission, vision, leadership team, and commitment to quality service.",
+  keywords: [
+    "about A1 Lifts and Engineering",
+    "best lift company in Bangladesh",
+    "lift company in Dhaka",
+    "lift suppliers in Bangladesh",
+    "lift and escalator company",
+    "generator company Bangladesh",
+    "substation supplier",
+    "elevator installation",
+    "A1 Lifts mission and vision",
+    "A1 Lifts team",
+    "engineering company Bangladesh",
+  ],
+  image: "/assets/seo/hero.png",
+  path: "about",
+});
+
+//>> SEO End
 
 const AboutPage = () => {
   return (

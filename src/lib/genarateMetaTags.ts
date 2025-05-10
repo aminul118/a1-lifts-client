@@ -1,12 +1,14 @@
 import { Metadata } from "next";
 import { MetaProps } from "./types/types";
 
+const baseUrl = "https://www.a1-lifts.com";
+
 export const generateMetaTags = ({
   title,
   description,
   keywords,
   image = "/assets/seo/hero.png",
-  url = "https://www.a1-lifts.com",
+  path = baseUrl,
 }: MetaProps): Metadata => {
   return {
     title,
@@ -15,7 +17,7 @@ export const generateMetaTags = ({
     category: "Healthcare Services",
     openGraph: {
       type: "website",
-      url: url,
+      url: `${baseUrl}/${path}`,
       title: title,
       description: description,
       siteName: "A1 Lifts and Engineering",
@@ -32,7 +34,7 @@ export const generateMetaTags = ({
     },
     applicationName: "A1 Lifts and Engineering",
     alternates: {
-      canonical: url,
+      canonical: `${baseUrl}/${path}`,
       languages: {
         "en-US": "https://a1-lifts.com/en-US",
       },

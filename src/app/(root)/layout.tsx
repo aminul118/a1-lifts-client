@@ -6,6 +6,7 @@ import Footer from "@/components/layouts/Footer/Footer";
 import { Metadata } from "next";
 import { generateMetaTags } from "@/lib/genarateMetaTags";
 
+//>> SEO Start
 export const metadata: Metadata = generateMetaTags({
   title:
     "A1 Lifts and Engineering - Best Lift & Escalator Company in Bangladesh ",
@@ -13,6 +14,7 @@ export const metadata: Metadata = generateMetaTags({
     "A1 Lifts and Enginnering is the best lift & Escalator company in Bangladesh that provides passenger lifts, hospital lifts, and capsule lifts, with technical services,. Lift maintains",
   keywords: [
     "lift company in Bangladesh",
+    "best lift company in bangladesh",
     " lift company in Dhaka, lift price in Bangladesh,",
     " lift elevator",
     "Hospital Lift Bangladesh",
@@ -23,8 +25,13 @@ export const metadata: Metadata = generateMetaTags({
     "A one lifts and enginnering",
     "Lift maintains",
     "Lifts parts",
+    "lift servicing company in bangladesh",
+    "small lift for a house",
   ],
+  image: "/assets/seo/hero.png",
+  path: "",
 });
+//>> SEO End
 
 const MainLayout = ({ children }: Children) => {
   return (
