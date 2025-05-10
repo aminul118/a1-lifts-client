@@ -22,7 +22,7 @@ export const metadata: Metadata = generateMetaTags({
     "A1 Lifts power products",
   ],
   image: "/assets/seo/hero.png",
-  path: "/generators",
+  path: "generators",
 });
 
 //>> SEO END
