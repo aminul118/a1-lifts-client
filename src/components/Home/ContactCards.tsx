@@ -13,7 +13,12 @@ const ContactCards = () => {
           <div>
             <p className="text-green-500 font-medium">Call Us For Service</p>
             <h2 className="text-xl sm:text-2xl font-bold">
-              <span className="text-white font-bold">(+21)</span> 25 256.21583
+              <a href="tel:+8801902884266" className="hover:underline block">
+                +880 1902 8842 66
+              </a>
+              <a href="tel:+8801711939350" className="hover:underline block">
+                +880 1711 9393 50
+              </a>
             </h2>
             <p className="text-gray-400">Call 24/7 Anytime For Your Problem</p>
           </div>
@@ -26,7 +31,11 @@ const ContactCards = () => {
           </div>
           <div>
             <p className="font-medium">Mail Us Anytime</p>
-            <h2 className="text-xl sm:text-2xl font-bold">info@a1-lifts.com</h2>
+            <h2 className="text-xl sm:text-2xl font-bold">
+              <a href="mailto:contact@a1-lifts.com" className="hover:underline">
+                contact@a1-lifts.com
+              </a>
+            </h2>
             <p className="text-white text-opacity-90">
               Mail 24/7 Anytime For Your Problem
             </p>
