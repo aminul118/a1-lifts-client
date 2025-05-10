@@ -1,9 +1,10 @@
 import React from "react";
-import { FaPhone, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import { FaPhone, FaMapMarkerAlt, FaClock, FaEnvelope } from "react-icons/fa";
+import { Button } from "../ui/button";
 
 const contactDetails = [
   { id: 1, icon: FaPhone, text: "+1 302 946 0678" },
-  // { id: 2, icon: FaEnvelope, text: "info@digitaltwinsenergy.com" },
+  { id: 2, icon: FaEnvelope, text: "contact@a1-lifts.com" },
   {
     id: 3,
     icon: FaMapMarkerAlt,
@@ -25,10 +26,9 @@ const ContactInfo = () => {
               key={id}
               className="flex items-start sm:items-center gap-4 w-full"
             >
-              <div className="flex-shrink-0 bg-blue-500/90 p-3 rounded-full text-white">
-                {/* Responsive icon sizes */}
+              <Button variant="outline">
                 <Icon size={10} />
-              </div>
+              </Button>
               <span className="text-gray-700 dark:text-white/70 break-words">
                 {text}
               </span>
