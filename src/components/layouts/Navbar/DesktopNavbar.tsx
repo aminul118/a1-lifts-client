@@ -135,7 +135,7 @@ const DesktopNavbar = () => {
                 <div className="relative w-full h-60 overflow-hidden">
                   <Image
                     src={menu.image}
-                    alt={menu.name}
+                    alt={`${menu.name} of A1 lifts and engineering`}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
