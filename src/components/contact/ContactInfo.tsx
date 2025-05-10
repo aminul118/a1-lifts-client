@@ -45,7 +45,7 @@ const ContactInfo = () => {
         <ul className="space-y-6">
           {contactDetails.map(({ id, icon: Icon, texts }) => (
             <li key={id} className="flex items-center gap-4 w-full">
-              <Button variant="outline">
+              <Button aria-label={id} variant="outline">
                 <Icon size={10} />
               </Button>
               <div className="space-y-1">
