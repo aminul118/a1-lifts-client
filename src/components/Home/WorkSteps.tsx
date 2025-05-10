@@ -29,10 +29,10 @@ const WorkSteps = () => {
   return (
     <Container className="2xl:h-[800px]">
       <div className="text-center mb-12">
-        <h3 className="text-orange-500 uppercase font-medium">Work Process</h3>
-        <h2 className="text-3xl font-bold mt-2 text-gray-900 dark:text-white">
+        <h2 className="text-orange-500 uppercase font-medium">Work Process</h2>
+        <h3 className="text-3xl font-bold mt-2 text-gray-900 dark:text-white">
           Follow 4 Easy Work Steps
-        </h2>
+        </h3>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {steps.map((step, idx) => (
