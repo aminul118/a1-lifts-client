@@ -20,7 +20,7 @@ const OurServices = () => {
               <div className="relative w-full h-60 2xl:h-72 overflow-hidden">
                 <Image
                   src={menu.image}
-                  alt={menu.name}
+                  alt={`${menu.name} of A1 lifts and enginerring`}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
