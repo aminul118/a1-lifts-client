@@ -1,6 +1,9 @@
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 // Social icons and URLs
-const socialLinks = [{ icon: <FaFacebook />, href: "#" }];
+const socialLinks = [
+  { icon: <FaFacebook />, href: "#" },
+  { icon: <FaLinkedin />, href: "#" },
+];
 
 // Footer link sections
 const footerLinks = [

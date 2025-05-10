@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import Copiright from "./Copiright";
 import { Button } from "@/components/ui/button";
 import { footerLinks, socialLinks } from "@/lib/constants/footerLinks";
+import Logo from "../Navbar/Logo";
 
 export default function Footer() {
   return (
@@ -10,14 +10,8 @@ export default function Footer() {
       <div className=" grid grid-cols-1 gap-12 lg:flex lg:justify-between container mx-auto">
         {/* Logo and Socials */}
         <div>
-          <Image
-            src="/logo.png"
-            alt="SPF Logo"
-            width={64}
-            height={64}
-            className="mb-2"
-          />
-          <p className=" mb-4">
+          <Logo size={70} />
+          <p className=" my-6">
             Bringing you the best solutions for your business. <br />
             Connect with us for a seamless experience.
           </p>

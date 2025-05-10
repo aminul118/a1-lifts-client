@@ -9,6 +9,7 @@ import {
   productsHoverMenu,
   servicesHoverMenu,
 } from "@/lib/constants/hoverMenu";
+import Logo from "./Logo";
 
 const DesktopNavbar = () => {
   const [isServicesHover, setisServicesHover] = useState(false);
@@ -18,11 +19,7 @@ const DesktopNavbar = () => {
     <header className="hidden md:block w-full bg-slate-800 fixed z-50 py-2 top-0 ">
       <nav className="relative container mx-auto">
         <div className="container mx-auto flex items-center justify-between px-4 py-2">
-          <Link href="/" passHref>
-            <div className="flex items-center gap-3">
-              <p className="text-2xl font-semibold text-white">A1 Lifts</p>
-            </div>
-          </Link>
+          <Logo size={50} />
 
           <ul className="flex items-center gap-6 lg:gap-10 text-[1rem]">
             <li>
