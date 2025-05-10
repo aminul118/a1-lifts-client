@@ -6,6 +6,35 @@ import HeroSlider from "@/components/Home/HeroSlider";
 import ProductShowcase from "@/components/Home/ProductShowcase";
 import ServicesSection from "@/components/Home/ServicesSection";
 import WorkSteps from "@/components/Home/WorkSteps";
+import { generateMetaTags } from "@/lib/genarateMetaTags";
+import { Metadata } from "next";
+
+//>> SEO Start
+export const metadata: Metadata = generateMetaTags({
+  title:
+    "A1 Lifts and Engineering - Best Lift & Escalator Company in Bangladesh ",
+  description:
+    "A1 Lifts and Enginnering is the best lift & Escalator company in Bangladesh that provides passenger lifts, hospital lifts, and capsule lifts, with technical services,. Lift maintains",
+  keywords: [
+    "lift company in Bangladesh",
+    "best lift company in bangladesh",
+    " lift company in Dhaka, lift price in Bangladesh,",
+    " lift elevator",
+    "Hospital Lift Bangladesh",
+    "Property Lifts",
+    "Lift for house",
+    "A1 lifts",
+    "A one lifts",
+    "A one lifts and enginnering",
+    "Lift maintains",
+    "Lifts parts",
+    "lift servicing company in bangladesh",
+    "small lift for a house",
+  ],
+  image: "/assets/seo/hero.png",
+  path: "",
+});
+//>> SEO End
 
 const HomePage = () => {
   return (
