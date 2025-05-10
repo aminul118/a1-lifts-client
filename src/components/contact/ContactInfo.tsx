@@ -1,14 +1,13 @@
-import React from "react";
 import { FaPhone, FaMapMarkerAlt, FaClock, FaEnvelope } from "react-icons/fa";
 import { Button } from "../ui/button";
 
 const contactDetails = [
-  { id: 1, icon: FaPhone, text: "+1 302 946 0678" },
+  { id: 1, icon: FaPhone, text: "+880 1718 6543 32" },
   { id: 2, icon: FaEnvelope, text: "contact@a1-lifts.com" },
   {
     id: 3,
     icon: FaMapMarkerAlt,
-    text: "2261 Market Street STE 5926, San Francisco, CA, United State, 94114",
+    text: "Dhaka, Bangladesh",
   },
   { id: 4, icon: FaClock, text: "Mon - Sat : 9:00 AM - 6:00 PM" },
 ];
@@ -21,7 +20,7 @@ const ContactInfo = () => {
           Contact Information
         </h2>
         <ul className="space-y-6">
-          {contactDetails.map(({ id, icon: Icon, text }) => (
+          {contactDetails?.map(({ id, icon: Icon, text }) => (
             <li
               key={id}
               className="flex items-start sm:items-center gap-4 w-full"
