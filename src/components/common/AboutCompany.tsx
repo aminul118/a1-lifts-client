@@ -60,7 +60,7 @@ const AboutCompany = () => {
         <h2 className="text-3xl font-bold mb-4">
           Powering Progress With Engineering Excellence
         </h2>
-        <p className="text-blue-600 text-lg font-medium mb-4">
+        <p className="text-foreground text-lg font-medium mb-4">
           Reliable Lift, Generator & Substation Solutions — All Under One Roof.
         </p>
         <p className="text-muted-foreground mb-4">
