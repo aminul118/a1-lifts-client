@@ -9,7 +9,7 @@ const OurManagementTeam = () => {
     <Container backgroundColor="dark:bg-slate-800 bg-white">
       <SectionTitle title="Our Management Team" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {managementTeam.map((team) => (
+        {managementTeam?.map((team) => (
           <Card
             data-aos="fade-up"
             key={team.id}

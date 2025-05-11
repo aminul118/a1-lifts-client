@@ -34,11 +34,11 @@ const ServicesSection = () => {
                 fill
                 className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
               />
-              <div className="absolute bottom-0 left-0 flex items-center gap-3 bg-white/90 w-full px-4 py-3">
+              <div className="absolute bottom-0 left-0 flex items-center gap-3 bg-white/95 dark:bg-slate-900/80 w-full px-4 py-3">
                 <div className={`${service.iconBg} p-2 rounded-full`}>
                   {service.icon}
                 </div>
-                <h3 className="text-blue-900 font-bold text-lg">
+                <h3 className="text-blue-900 dark:text-white font-bold text-lg">
                   {service.title}
                 </h3>
               </div>
