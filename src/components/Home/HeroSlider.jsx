@@ -45,7 +45,7 @@ const HeroSlider = () => {
                 className={`w-full max-w-3xl mx-auto flex flex-col justify-center items-center text-center px-4 ${item?.class}`}
               >
                 <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">
-                  {item.title}
+                  {item?.title}
                 </h2>
                 <p className="text-base md:text-lg mb-6 text-white break-words">
                   {item?.description}

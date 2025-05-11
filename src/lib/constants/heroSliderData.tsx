@@ -12,6 +12,16 @@ const heroSliderData: Slider[] = [
     button_text: "Contact",
   },
   {
+    id: 3,
+    img: "/assets/backgrounds/escalator.jpg",
+    title: "Escalator",
+    class: "text-white",
+    description:
+      "Providing reliable, safe, and efficient lift solutions for residential, commercial, and industrial buildings across the country.",
+    url: "/contact",
+    button_text: "Contact",
+  },
+  {
     id: 2,
     img: "/assets/backgrounds/banner2.png",
     title: "Fast Delivery Services",
