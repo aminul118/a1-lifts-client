@@ -31,7 +31,7 @@ export const generateMetaTags = ({
     twitter: {
       card: "summary_large_image",
       site: "@a1lifts",
-      creator: "@drfatemaashraf",
+      creator: "@a1liftsandengineering",
       images: image,
       title,
       description,
