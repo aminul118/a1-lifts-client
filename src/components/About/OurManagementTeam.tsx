@@ -13,7 +13,7 @@ const OurManagementTeam = () => {
           <Card
             data-aos="fade-up"
             key={team.id}
-            className="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-lg text-center"
+            className="bg-white dark:bg-slate-900 p-6 text-center"
           >
             <CardContent className="space-y-4">
               <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-orange-500">
