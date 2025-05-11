@@ -14,12 +14,12 @@ export const metadata: Metadata = generateMetaTags({
   title:
     "A1 Lifts and Engineering - Best Lift & Escalator Company in Bangladesh ",
   description:
-    "A1 Lifts and Enginnering is the best lift & Escalator company in Bangladesh that provides passenger lifts, hospital lifts, and capsule lifts, with technical services,. Lift maintains",
+    "A1 Lifts and Enginnering is the best lift , Escalator, Genarator, Substrations and engineering solution company in Bangladesh that provides passenger lifts, hospital lifts, and capsule lifts, with technical services, Lift maintains, spare parts of lifts, substation and genarator",
   keywords: [
     "lift company in Bangladesh",
     "best lift company in bangladesh",
-    " lift company in Dhaka, lift price in Bangladesh,",
-    " lift elevator",
+    "Lift company in Dhaka, lift price in Bangladesh,",
+    "lift elevator",
     "Hospital Lift Bangladesh",
     "Property Lifts",
     "Lift for house",
@@ -30,6 +30,7 @@ export const metadata: Metadata = generateMetaTags({
     "Lifts parts",
     "lift servicing company in bangladesh",
     "small lift for a house",
+    "A1 lifts bd",
   ],
   image: "/assets/screenshots/hero.png",
   path: "",
