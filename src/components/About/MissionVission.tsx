@@ -19,7 +19,7 @@ const MissionVission = () => {
           <CardContent>
             <div className="flex items-center gap-4 mb-4">
               <Target className="text-blue-600 w-8 h-8" />
-              <h3 className="text-xl font-semibold">Our Mission</h3>
+              <h2 className="text-xl font-semibold">Our Mission</h2>
             </div>
             <p className="text-muted-foreground">
               To deliver top-notch lift, generator, and substation installation
@@ -33,7 +33,7 @@ const MissionVission = () => {
           <CardContent>
             <div className="flex items-center gap-4 mb-4">
               <Eye className="text-blue-600 w-8 h-8" />
-              <h3 className="text-xl font-semibold">Our Vision</h3>
+              <h2 className="text-xl font-semibold">Our Vision</h2>
             </div>
             <p className="text-muted-foreground">
               To become a nationally trusted brand in engineering solutions by
