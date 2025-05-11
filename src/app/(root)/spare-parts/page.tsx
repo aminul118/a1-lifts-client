@@ -6,7 +6,7 @@ import { Metadata } from "next";
 //>> SEO Start
 
 export const metadata: Metadata = generateMetaTags({
-  title: "Spare Parts | A1 Lifts and Engineering Bangladesh",
+  title: "Spare Parts",
   description:
     "Explore high-quality spare parts for lifts, escalators, and generators from A1 Lifts and Engineering. We provide a wide range of reliable replacement parts for residential and commercial needs in Bangladesh.",
   keywords: [

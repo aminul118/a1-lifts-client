@@ -12,7 +12,10 @@ export const generateMetaTags = ({
 }: MetaProps): Metadata => {
   return {
     metadataBase: new URL(baseUrl),
-    title,
+    title: {
+      default: title,
+      template: "%s | A1 Lifts and Engineering Bangladesh",
+    },
     description,
     keywords,
     category: "Healthcare Services",

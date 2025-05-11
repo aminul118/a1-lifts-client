@@ -5,7 +5,7 @@ import { Metadata } from "next";
 //>> SEO Start
 
 export const metadata: Metadata = generateMetaTags({
-  title: "Terms of Use | A1 Lifts and Engineering",
+  title: "Terms of Use",
   description:
     "Review the Terms of Use for A1 Lifts and Engineering. Understand the rules for accessing and using our website, services, and digital content.",
   keywords: [

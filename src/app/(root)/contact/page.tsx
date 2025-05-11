@@ -6,7 +6,7 @@ import { Metadata } from "next";
 //>> SEO Start
 
 export const metadata: Metadata = generateMetaTags({
-  title: "Contact A1 Lifts and Engineering | Best Lift Company in Bangladesh",
+  title: "Contact A1 Lifts and Engineering - Best Lift Company in Bangladesh",
   description:
     "Get in touch with A1 Lifts and Engineering — the leading lift and escalator company in Bangladesh. Contact us for inquiries about passenger lifts, hospital lifts, lift maintenance, and installation services.",
   keywords: [

@@ -8,7 +8,7 @@ import { Metadata } from "next";
 //>> SEO Start
 
 export const metadata: Metadata = generateMetaTags({
-  title: "Lift Installation & Maintenance | A1 Lifts and Engineering",
+  title: "Lift Installation & Maintenance",
   description:
     "A1 Lifts and Engineering provides expert lift installation and maintenance services in Bangladesh. We specialize in residential and commercial lifts, ensuring reliable vertical transport solutions for every need.",
   keywords: [
