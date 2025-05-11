@@ -25,9 +25,9 @@ const OurManagementTeam = () => {
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
-              <h3 className="text-lg font-semibold text-orange-500">
+              <h2 className="text-lg font-semibold text-orange-500">
                 {team.designation}
-              </h3>
+              </h2>
               <p className="text-sm text-gray-700 dark:text-gray-300">
                 {team.details}
               </p>
