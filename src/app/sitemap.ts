@@ -12,75 +12,73 @@ const sitemap = (): MetadataRoute.Sitemap => {
 
   const staticRoutes: Routes[] = [
     {
-      url: "",
+      url: "/",
       changeFrequency: "monthly",
-      priority: 1,
+      priority: 1.0,
     },
     {
       url: "about",
       changeFrequency: "monthly",
-      priority: 8,
+      priority: 0.8,
     },
     {
       url: "lifts",
       changeFrequency: "monthly",
-      priority: 7,
+      priority: 0.7,
     },
     {
-      url: "genarators",
+      url: "generators",
       changeFrequency: "monthly",
-      priority: 6,
+      priority: 0.6,
     },
     {
       url: "substations",
       changeFrequency: "monthly",
-      priority: 6,
+      priority: 0.6,
     },
     {
       url: "lift-services",
       changeFrequency: "monthly",
-      priority: 5,
+      priority: 0.5,
     },
     {
-      url: "genarator-services",
+      url: "generator-services",
       changeFrequency: "monthly",
-      priority: 5,
+      priority: 0.5,
     },
     {
       url: "substation-services",
       changeFrequency: "monthly",
-      priority: 5,
+      priority: 0.5,
     },
     {
       url: "engineering-solution",
       changeFrequency: "monthly",
-      priority: 5,
+      priority: 0.5,
     },
     {
       url: "spare-parts",
       changeFrequency: "yearly",
-      priority: 1,
+      priority: 1.0,
     },
     {
       url: "privacy-policy",
       changeFrequency: "yearly",
-      priority: 3,
+      priority: 0.3,
     },
     {
       url: "terms-of-use",
       changeFrequency: "yearly",
-      priority: 3,
+      priority: 0.3,
     },
   ];
 
-  const staticAllRoutes = staticRoutes.map((route) => ({
-    url: `${baseUrl}/${route.url}`,
+  return staticRoutes.map((route) => ({
+    url: `${baseUrl}/${route.url}`.replace(/\/+$/, ""),
     lastModified,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));
-
-  return staticAllRoutes;
 };
 
 export default sitemap;
