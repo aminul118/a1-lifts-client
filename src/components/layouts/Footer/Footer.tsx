@@ -29,7 +29,7 @@ export default function Footer() {
         {/* Footer Links */}
         {footerLinks?.map((section, idx) => (
           <div key={idx}>
-            <h3 className="font-semibold mb-3">{section?.title}</h3>
+            <p className="font-semibold mb-3">{section?.title}</p>
             <ul className="space-y-2 mt-4">
               {section?.links?.map((link, i) => (
                 <li key={i}>
