@@ -31,6 +31,7 @@ export function ModeToggle({ className }: ClassName) {
       size="icon"
       className={className}
       onClick={toggleTheme}
+      aria-label="Theme toggle button"
     >
       <Sun
         className={`h-[1.2rem] w-[1.2rem] transition-all ${

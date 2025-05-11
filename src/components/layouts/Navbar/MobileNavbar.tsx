@@ -53,6 +53,7 @@ const MobileNavbar = () => {
           <Button
             variant="destructive"
             onClick={() => setMobileSidebarOpen(false)}
+            aria-label="Menu close button"
           >
             <X />
           </Button>
