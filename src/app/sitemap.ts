@@ -62,6 +62,11 @@ const sitemap = (): MetadataRoute.Sitemap => {
       priority: 1.0,
     },
     {
+      url: "contact",
+      changeFrequency: "yearly",
+      priority: 5.0,
+    },
+    {
       url: "privacy-policy",
       changeFrequency: "yearly",
       priority: 0.3,
