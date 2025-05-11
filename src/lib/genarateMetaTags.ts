@@ -7,10 +7,11 @@ export const generateMetaTags = ({
   title,
   description,
   keywords,
-  image = "/assets/seo/hero.png",
-  path = baseUrl,
+  image = "/assets/screenshots/hero.png",
+  path = "",
 }: MetaProps): Metadata => {
   return {
+    metadataBase: new URL(baseUrl),
     title,
     description,
     keywords,
@@ -40,6 +41,7 @@ export const generateMetaTags = ({
       },
     },
     facebook: { appId: "580317868506376" },
+    manifest: "/manifest.webmanifest",
     // authors: [
     //   {
     //     name: "Dr. Fatema Ashraf",
