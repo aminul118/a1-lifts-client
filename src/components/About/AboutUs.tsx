@@ -7,7 +7,7 @@ const AboutUs = () => {
     <Container backgroundColor="dark:bg-slate-800 bg-white">
       <SectionTitle title="Something About us" />
       <div className="space-y-4 lg:text-justify">
-        {aboutUs.map((about, i) => {
+        {aboutUs?.map((about, i) => {
           return <p key={i}>{about}</p>;
         })}
       </div>
