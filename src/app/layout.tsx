@@ -25,7 +25,7 @@ export const metadata: Metadata = generateMetaTags({
     "Lift maintains",
     "Lifts parts",
   ],
-  image: "/assets/seo/hero.png",
+  image: "/assets/screenshots/hero.png",
   path: "",
 });
 //>> SEO END

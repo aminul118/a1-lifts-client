@@ -22,7 +22,7 @@ export const metadata: Metadata = generateMetaTags({
     "A One Lifts and Engineering",
     "lift installation service",
   ],
-  image: "/assets/seo/hero.png",
+  image: "/assets/screenshots/hero.png",
   path: "contact",
 });
 

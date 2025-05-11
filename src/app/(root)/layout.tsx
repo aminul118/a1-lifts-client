@@ -28,7 +28,7 @@ export const metadata: Metadata = generateMetaTags({
     "lift servicing company in bangladesh",
     "small lift for a house",
   ],
-  image: "/assets/seo/hero.png",
+  image: "/assets/screenshots/hero.png",
   path: "",
 });
 //>> SEO End

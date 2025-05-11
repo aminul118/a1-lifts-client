@@ -24,7 +24,7 @@ export const metadata: Metadata = generateMetaTags({
     "vertical transport solutions Bangladesh",
     "hospital lift installation",
   ],
-  image: "/assets/seo/hero.png",
+  image: "/assets/screenshots/hero.png",
   path: "lift-services",
 });
 

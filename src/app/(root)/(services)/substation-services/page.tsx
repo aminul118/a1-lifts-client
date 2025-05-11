@@ -22,7 +22,7 @@ export const metadata: Metadata = generateMetaTags({
     "A1 Lifts substation services",
     "A1 Lifts power solutions",
   ],
-  image: "/assets/seo/hero.png",
+  image: "/assets/screenshots/hero.png",
   path: "substation-services",
 });
 

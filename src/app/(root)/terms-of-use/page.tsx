@@ -20,7 +20,7 @@ export const metadata: Metadata = generateMetaTags({
     "escalator service policy",
     "terms of website use",
   ],
-  image: "/assets/seo/hero.png",
+  image: "/assets/screenshots/hero.png",
   path: "terms-of-use",
 });
 

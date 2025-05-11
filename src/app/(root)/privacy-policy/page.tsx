@@ -20,7 +20,7 @@ export const metadata: Metadata = generateMetaTags({
     "terms of use",
     "A1 Lifts user agreement",
   ],
-  image: "/assets/seo/hero.png",
+  image: "/assets/screenshots/hero.png",
   path: "privacy-policy",
 });
 

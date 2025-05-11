@@ -21,7 +21,7 @@ export const metadata: Metadata = generateMetaTags({
     "elevator parts Bangladesh",
     "lift maintenance parts",
   ],
-  image: "/assets/seo/hero.png",
+  image: "/assets/screenshots/hero.png",
   path: "spare-parts",
 });
 

@@ -27,7 +27,7 @@ export const metadata: Metadata = generateMetaTags({
     "A1 Lifts team",
     "engineering company Bangladesh",
   ],
-  image: "/assets/seo/hero.png",
+  image: "/assets/screenshots/hero.png",
   path: "about",
 });
 
