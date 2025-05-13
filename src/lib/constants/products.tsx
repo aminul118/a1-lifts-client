@@ -4,56 +4,33 @@ const productsData = [
     title: "lift",
     products: [
       {
-        product_name: "Lift",
+        slug: "hd-v002",
+        product_name: "HD-V002",
         category: "lift",
-        product_img: "/assets/images/products/controller.png",
+        product_img: "/assets/images/products/lifts/HD-V002.jpg",
       },
-    ],
-  },
-  {
-    id: 2,
-    title: "lift",
-    products: [
       {
-        product_name: "Lift",
+        slug: "hd-bt03",
+        product_name: "HD-BT03",
         category: "lift",
-        product_img: "/assets/images/products/controller.png",
+        product_img: "/assets/images/products/lifts/HD-BT03.jpg",
       },
-    ],
-  },
-  {
-    id: 3,
-    title: "lift",
-    products: [
       {
-        product_name: "Lift",
+        slug: "hd-dta05",
+        product_name: "HD-DTA05",
         category: "lift",
-        product_img: "/assets/images/products/controller.png",
+        product_img: "/assets/images/products/lifts/HD-DTA05.jpg",
       },
-    ],
-  },
-  {
-    id: 4,
-    title: "lift",
-    products: [
       {
-        product_name: "Lift",
+        slug: "hd-bt04",
+        product_name: "HD-BT04",
         category: "lift",
-        product_img: "/assets/images/products/controller.png",
+        product_img: "/assets/images/products/lifts/HD-BT04.jpg",
       },
     ],
   },
-  {
-    id: 5,
-    title: "lift",
-    products: [
-      {
-        product_name: "Lift",
-        category: "lift",
-        product_img: "/assets/images/products/controller.png",
-      },
-    ],
-  },
+
+  // Genarators
   {
     id: 6,
     title: "genarator",
@@ -65,6 +42,7 @@ const productsData = [
       },
     ],
   },
+  //  Substrations
   {
     id: 7,
     title: "substration",

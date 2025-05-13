@@ -10,15 +10,15 @@ const ProductsCard = ({ category }: { category: string }) => {
   return (
     <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {products.map((product, i) => (
-        <Card key={i}>
-          <CardContent>
+        <Card key={i} className="p-0">
+          <CardContent className="p-0">
             <Image
               src={product.product_img}
               alt={product.product_name}
               height={400}
               width={400}
             />
-            <p className="text-center">{product.product_name}</p>
+            <p className="text-center py-2">{product.product_name}</p>
           </CardContent>
         </Card>
       ))}
