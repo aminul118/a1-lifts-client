@@ -14,7 +14,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
-import "@/styles/certification.css";
+import "@/styles/customSwipper.css";
 
 const CertificationGallery = () => {
   const [index, setIndex] = useState(-1);
@@ -35,7 +35,6 @@ const CertificationGallery = () => {
         effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={4}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -53,6 +52,9 @@ const CertificationGallery = () => {
         breakpoints={{
           320: {
             slidesPerView: 2,
+          },
+          800: {
+            slidesPerView: 4,
           },
         }}
       >

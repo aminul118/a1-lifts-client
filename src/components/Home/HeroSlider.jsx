@@ -8,7 +8,7 @@ import "swiper/css/effect-fade";
 import { EffectFade, Pagination, Navigation, Autoplay } from "swiper/modules";
 import Link from "next/link";
 import Image from "next/image";
-import "@/styles/HeroSlider.css";
+import "@/styles/customSwipper.css";
 import { Button } from "../ui/button";
 import heroSliderData from "@/lib/constants/heroSliderData";
 
