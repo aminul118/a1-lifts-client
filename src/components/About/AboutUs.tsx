@@ -8,7 +8,11 @@ const AboutUs = () => {
       <SectionTitle title="Something About us" />
       <div className="space-y-4 lg:text-justify">
         {aboutUs?.map((about, i) => {
-          return <p key={i}>{about}</p>;
+          return (
+            <p key={i} data-aos="zoom-in-right">
+              {about}
+            </p>
+          );
         })}
       </div>
     </Container>
