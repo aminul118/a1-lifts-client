@@ -7,7 +7,7 @@ import { Metadata } from "next";
 //>> SEO Start
 
 export const metadata: Metadata = generateMetaTags({
-  title: "Engineering Solutions",
+  title: "Engineering Solutions of A1 lifts and Engineering",
   description:
     "Explore expert engineering solutions by A1 Lifts and Engineering in Bangladesh. We provide top-tier services for electrical substations, generators, and other power systems for residential and commercial projects.",
   keywords: [

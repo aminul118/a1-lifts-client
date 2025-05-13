@@ -12,7 +12,7 @@ import { Metadata } from "next";
 //>> SEO Start
 export const metadata: Metadata = generateMetaTags({
   title:
-    "A1 Lifts and Engineering - Best Lift & Escalator Company in Bangladesh ",
+    "A1 Lifts and Engineering -Leading Lift & Escalator Company in Bangladesh ",
   description:
     "A1 Lifts and Enginnering is the best lift , Escalator, Genarator, Substrations and engineering solution company in Bangladesh that provides passenger lifts, hospital lifts, and capsule lifts, with technical services, Lift maintains, spare parts of lifts, substation and genarator",
   keywords: [
@@ -48,7 +48,6 @@ const HomePage = () => {
       <WorkSteps />
       <FAQ />
       <ContactCards />
-
     </>
   );
 };

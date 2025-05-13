@@ -6,7 +6,7 @@ import { Metadata } from "next";
 //>> SEO Start
 
 export const metadata: Metadata = generateMetaTags({
-  title: "Generators",
+  title: "Generators - A1 Lifts and Engineering",
   description:
     "Explore top-quality generators from A1 Lifts and Engineering. We provide reliable generator installation, servicing, and maintenance solutions for residential and commercial properties in Bangladesh.",
   keywords: [
