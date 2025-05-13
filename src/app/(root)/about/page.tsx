@@ -1,4 +1,5 @@
 import AboutUs from "@/components/About/AboutUs";
+import CertificationGallary from "@/components/About/CertificationGallary";
 import MissionVission from "@/components/About/MissionVission";
 import OurManagementTeam from "@/components/About/OurManagementTeam";
 import ProfessionalService from "@/components/About/ProfessionalService";
@@ -46,6 +47,7 @@ const AboutPage = () => {
       <AboutUs />
       <MissionVission />
       <OurManagementTeam />
+      <CertificationGallary />
       <ProfessionalService />
       <WhyA1Lifts />
     </>
