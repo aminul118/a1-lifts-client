@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
@@ -8,44 +8,74 @@ import Container from "../ui/Container";
 import SectionTitle from "../ui/SectionTitle";
 import certificationImageData from "@/lib/constants/certificationImageData";
 
-const CertificationGallary = () => {
+// Swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import "@/styles/certification.css";
+
+const CertificationGallery = () => {
   const [index, setIndex] = useState(-1);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null; // Prevent hydration mismatch
 
   return (
     <Container>
-      <SectionTitle title=" Certifications" />
-      {/* Photo Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
-        {certificationImageData.map((photo, idx) => (
-          <div
+      <SectionTitle title="Certifications" />
+
+      {/* Swiper Slider */}
+      <Swiper
+        effect="coverflow"
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={4}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={{ clickable: true }}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
+        className="mySwiper"
+      >
+        {certificationImageData?.map((photo, idx) => (
+          <SwiperSlide
             key={idx}
             onClick={() => setIndex(idx)}
-            className="w-full h-[420px] relative overflow-hidden group cursor-pointer "
+            className="w-[300px] h-[420px] relative overflow-hidden group cursor-pointer"
           >
-            {/* Image */}
             <Image
               height={photo.height}
               width={photo.width}
               src={photo.src}
               alt={photo.title}
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700"
             />
 
-            {/* Hover Text */}
-            <div className="absolute top-1/2 transform -translate-y-1/2 w-full h-full left-0 z-20 flex items-center justify-center flex-col text-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <h1 className="text-[1.5rem] font-bold text-white">
-                {photo.title}
-              </h1>
-              <p className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 mt-2">
+            <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-10 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <h1 className="text-xl font-bold text-white">{photo.title}</h1>
+              <p className="text-white mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                 {photo.description}
               </p>
             </div>
 
-            {/* Bottom Gradient Shadow */}
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          </div>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
 
       {/* Lightbox */}
       <Lightbox
@@ -62,4 +92,4 @@ const CertificationGallary = () => {
   );
 };
 
-export default CertificationGallary;
+export default CertificationGallery;
