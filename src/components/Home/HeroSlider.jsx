@@ -26,8 +26,7 @@ const HeroSlider = () => {
       pagination={{
         clickable: true,
       }}
-      navigation={true}
-      modules={[EffectFade, Pagination, Navigation, Autoplay]}
+      modules={[EffectFade, Pagination, Autoplay]}
       className="mySwiper"
     >
       {heroSliderData?.map((item) => (
