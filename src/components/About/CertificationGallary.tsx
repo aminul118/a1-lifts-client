@@ -13,7 +13,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import { EffectCoverflow, Autoplay } from "swiper/modules";
 import "@/styles/customSwipper.css";
 
 const CertificationGallery = () => {
@@ -47,7 +47,7 @@ const CertificationGallery = () => {
           delay: 1500,
           disableOnInteraction: false,
         }}
-        modules={[EffectCoverflow, Pagination, Autoplay]}
+        modules={[EffectCoverflow, Autoplay]}
         className="mySwiper"
         breakpoints={{
           320: {
