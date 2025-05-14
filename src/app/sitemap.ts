@@ -1,15 +1,19 @@
+import { Routes } from "@/lib/types/types";
 import type { MetadataRoute } from "next";
 
-type Routes = {
-  url: string;
-  changeFrequency: "daily" | "weekly" | "monthly" | "yearly";
-  priority: number;
+const baseUrl = "https://www.a1-lifts.com";
+const lastModified = new Date();
+
+const generateSitemapEntries = (routes: Routes[]): MetadataRoute.Sitemap => {
+  return routes.map((route) => ({
+    url: `${baseUrl}${route?.url}`.replace(/\/+$/, ""),
+    lastModified,
+    changeFrequency: route?.changeFrequency,
+    priority: route?.priority,
+  }));
 };
 
 const sitemap = (): MetadataRoute.Sitemap => {
-  const baseUrl = "https://www.a1-lifts.com";
-  const lastModified = new Date();
-
   const staticRoutes: Routes[] = [
     {
       url: "/",
@@ -78,12 +82,7 @@ const sitemap = (): MetadataRoute.Sitemap => {
     },
   ];
 
-  return staticRoutes.map((route) => ({
-    url: `${baseUrl}/${route.url}`.replace(/\/+$/, ""),
-    lastModified,
-    changeFrequency: route.changeFrequency,
-    priority: route.priority,
-  }));
+  return [...generateSitemapEntries(staticRoutes)];
 };
 
 export default sitemap;

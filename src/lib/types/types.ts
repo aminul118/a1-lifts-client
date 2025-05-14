@@ -14,6 +14,12 @@ export type MetaProps = {
   path?: string;
 };
 
+export type Routes = {
+  url: string;
+  changeFrequency: "daily" | "weekly" | "monthly" | "yearly";
+  priority: number;
+};
+
 export interface TypewriterProps {
   words: string[];
   loop?: number;
