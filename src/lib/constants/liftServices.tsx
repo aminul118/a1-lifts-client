@@ -39,7 +39,7 @@ const liftServices: Services[] = [
   },
   {
     service: "Customized Lift Solutions",
-    image: "/assets/images/services/elevator.jpg",
+    image: "/assets/images/productMenu/elevator.jpg",
     details: [
       "Design and installation of customized elevators.",
       "Tailored to fit unique architectural requirements.",
