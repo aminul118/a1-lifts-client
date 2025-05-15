@@ -5,7 +5,7 @@ import React from "react";
 const Logo = ({ size }: { size: number }) => {
   return (
     <Link href="/" passHref>
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 text-white">
         <Image
           src="./logo.svg"
           width={size}
@@ -13,9 +13,7 @@ const Logo = ({ size }: { size: number }) => {
           alt="A1 lifts and enginnering logo"
         />
         <div>
-          <p className="text-xl md:text-2xl font-semibold text-white">
-            A1 Lifts
-          </p>
+          <p className="text-xl md:text-2xl font-semibold ">A1 Lifts</p>
           <p className="text-xs">And Engineering</p>
         </div>
       </div>
