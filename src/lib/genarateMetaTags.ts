@@ -42,11 +42,11 @@ export const generateMetaTags = ({
     },
     facebook: { appId: "580317868506376" },
     manifest: "/manifest.webmanifest",
-    // authors: [
-    //   {
-    //     name: "Dr. Fatema Ashraf",
-    //     url: "http://www.shrlbd.com/team/675663806e9379ed3c2a6f99",
-    //   },
-    // ],
+    authors: [
+      {
+        name: "Md. Abdul Motaleb",
+        // url: "http://www.shrlbd.com/team/675663806e9379ed3c2a6f99",
+      },
+    ],
   };
 };

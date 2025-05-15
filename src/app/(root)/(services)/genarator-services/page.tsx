@@ -11,19 +11,8 @@ export const metadata: Metadata = generateMetaTags({
   title: "Generator Installation & Maintenance - A1 Lifts and Engineering",
   description:
     "A1 Lifts and Engineering provides expert generator installation and maintenance services in Bangladesh. Ensure your property has reliable power systems with our tailored solutions for residential and commercial needs.",
-  keywords: [
-    "generator installation Bangladesh",
-    "generator maintenance Bangladesh",
-    "diesel generator services",
-    "generator repair Bangladesh",
-    "A1 Lifts generator services",
-    "generator supplier Bangladesh",
-    "power backup solutions Bangladesh",
-    "generator servicing",
-    "residential generator installation",
-    "commercial generator solutions",
-    "A1 Lifts power services",
-  ],
+  keywords:
+    "generator installation Bangladesh, generator maintenance Bangladesh, diesel generator services, generator repair Bangladesh, A1 Lifts generator services, generator supplier Bangladesh, power backup solutions Bangladesh, generator servicing, residential generator installation, commercial generator solutions, A1 Lifts power services",
   image: "/assets/screenshots/hero.png",
   path: "generator-services",
 });

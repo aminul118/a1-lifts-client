@@ -8,18 +8,8 @@ export const metadata: Metadata = generateMetaTags({
   title: "Terms of Use - A1 Lifts and Engineering",
   description:
     "Review the Terms of Use for A1 Lifts and Engineering. Understand the rules for accessing and using our website, services, and digital content.",
-  keywords: [
-    "A1 Lifts terms of use",
-    "terms and conditions A1 Lifts",
-    "website usage policy",
-    "lift company legal terms",
-    "Bangladesh engineering services terms",
-    "A1 Lifts disclaimer",
-    "user agreement A1 Lifts",
-    "lift service access rules",
-    "escalator service policy",
-    "terms of website use",
-  ],
+  keywords:
+    "A1 Lifts terms of use, terms and conditions A1 Lifts, website usage policy, lift company legal terms, Bangladesh engineering services terms, A1 Lifts disclaimer, user agreement A1 Lifts, lift service access rules, escalator service policy, terms of website use",
   image: "/assets/screenshots/hero.png",
   path: "terms-of-use",
 });

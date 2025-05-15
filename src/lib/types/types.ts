@@ -9,7 +9,7 @@ export type Params = {
 export type MetaProps = {
   title: string;
   description: string;
-  keywords: string[];
+  keywords: string;
   image?: string;
   path?: string;
 };

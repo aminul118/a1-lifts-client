@@ -9,18 +9,8 @@ export const metadata: Metadata = generateMetaTags({
   title: "Generators - A1 Lifts and Engineering",
   description:
     "Explore top-quality generators from A1 Lifts and Engineering. We provide reliable generator installation, servicing, and maintenance solutions for residential and commercial properties in Bangladesh.",
-  keywords: [
-    "generators Bangladesh",
-    "generator products Bangladesh",
-    "diesel generators",
-    "generator installation Bangladesh",
-    "generator maintenance",
-    "commercial generators Bangladesh",
-    "residential generator solutions",
-    "A1 Lifts generators",
-    "generator servicing Bangladesh",
-    "A1 Lifts power products",
-  ],
+  keywords:
+    "generators Bangladesh, generator products Bangladesh, diesel generators, generator installation Bangladesh, generator maintenance, commercial generators Bangladesh, residential generator solutions, A1 Lifts generators, generator servicing Bangladesh, A1 Lifts power products",
   image: "/assets/screenshots/hero.png",
   path: "generators",
 });

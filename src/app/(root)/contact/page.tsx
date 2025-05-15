@@ -9,19 +9,8 @@ export const metadata: Metadata = generateMetaTags({
   title: "Contact - A1 Lifts and Engineering",
   description:
     "Get in touch with A1 Lifts and Engineering — the leading lift and escalator company in Bangladesh. Contact us for inquiries about passenger lifts, hospital lifts, lift maintenance, and installation services.",
-  keywords: [
-    "contact lift company in Bangladesh",
-    "best lift company in Bangladesh",
-    "lift company in Dhaka",
-    "lift price in Bangladesh",
-    "lift elevator Bangladesh",
-    "Hospital Lift Bangladesh",
-    "Lift maintenance",
-    "small lift for house",
-    "A1 Lifts contact",
-    "A One Lifts and Engineering",
-    "lift installation service",
-  ],
+  keywords:
+    "contact lift company in Bangladesh, best lift company in Bangladesh, lift company in Dhaka, lift price in Bangladesh, lift elevator Bangladesh, Hospital Lift Bangladesh, Lift maintenance, small lift for house, A1 Lifts contact, A One Lifts and Engineering, lift installation service",
   image: "/assets/screenshots/hero.png",
   path: "contact",
 });
