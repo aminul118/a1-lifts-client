@@ -11,7 +11,7 @@ const TypeWriter = ({
   className = "text-3xl lg:text-5xl font-bold leading-8 lg:leading-16 lg:h-96 h-24",
 }: TypewriterProps) => {
   return (
-    <h1 className={className}>
+    <p className={className}>
       <Typewriter
         words={words}
         cursor
@@ -21,7 +21,7 @@ const TypeWriter = ({
         deleteSpeed={deleteSpeed}
         delaySpeed={delaySpeed}
       />
-    </h1>
+    </p>
   );
 };
 

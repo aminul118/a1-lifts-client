@@ -28,9 +28,9 @@ const SectionBanner = ({
 
       {/* Text content */}
       <div className="relative z-20 text-center max-w-2xl px-4">
-        <h2 className="text-3xl 2xl:text-5xl font-bold mb-6 text-white">
+        <h1 className="text-3xl 2xl:text-5xl font-bold mb-6 text-white">
           {heading}
-        </h2>
+        </h1>
         {description && <p className="lg:text-lg text-white">{description}</p>}
       </div>
     </div>

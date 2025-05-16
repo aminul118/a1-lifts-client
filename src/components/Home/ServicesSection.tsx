@@ -21,7 +21,7 @@ const ServicesSection = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {services.map((service, index) => (
+        {services?.map((service, index) => (
           <div
             data-aos="fade-up"
             key={index}
