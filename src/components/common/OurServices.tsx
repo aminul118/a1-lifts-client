@@ -26,9 +26,9 @@ const OurServices = () => {
                 />
               </div>
               <div className="px-4 py-6">
-                <p className="text-lg font-semibold  group-hover:text-blue-600 transition">
+                <h3 className="text-lg font-semibold  group-hover:text-blue-600 transition">
                   {menu.name}
-                </p>
+                </h3>
               </div>
             </Link>
           </Card>
