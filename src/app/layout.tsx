@@ -4,7 +4,6 @@ import { poppins } from "@/lib/fonts";
 import { ThemeProvider } from "../providers/ThemeProvider";
 import AosProvider from "../providers/AosProvider";
 
-
 const RootLayout = ({ children }: Children) => {
   return (
     <html lang="en" suppressHydrationWarning>
