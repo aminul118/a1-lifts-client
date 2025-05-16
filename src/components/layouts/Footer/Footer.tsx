@@ -17,7 +17,7 @@ export default function Footer() {
           </p>
           <div className="flex flex-wrap gap-3">
             {socialLinks?.map((item, idx) => (
-              <Link key={idx} href={item.href}>
+              <Link target="_blank" key={idx} href={item.href}>
                 <Button aria-label={item.name} variant="outline">
                   {item.icon}
                 </Button>

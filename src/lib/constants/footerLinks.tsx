@@ -1,8 +1,16 @@
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 // Social icons and URLs
 const socialLinks = [
-  { icon: <FaFacebook />, href: "#", name: "Facebook icon" },
-  { icon: <FaLinkedin />, href: "#", name: "Linkedin icon" },
+  {
+    icon: <FaFacebook />,
+    href: "https://www.linkedin.com/company/a1-lifts-engineering",
+    name: "Facebook icon",
+  },
+  {
+    icon: <FaLinkedin />,
+    href: "https://www.facebook.com/a1lifts",
+    name: "Linkedin icon",
+  },
 ];
 
 // Footer link sections

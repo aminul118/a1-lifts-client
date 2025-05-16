@@ -27,8 +27,8 @@ const HomePage = () => {
   return (
     <div className="space-y-8 lg:space-y-12">
       <HeroSlider />
-      <AllProducts />
       <OurProducts />
+      <AllProducts />
       <OurServices />
       <ProductShowcase />
       <ServicesSection />
