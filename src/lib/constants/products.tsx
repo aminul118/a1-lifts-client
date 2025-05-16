@@ -1,271 +1,361 @@
-const productsData = [
+export type Product = {
+  slug?: string;
+  product_name: string;
+  category: string;
+  product_img: string;
+};
+
+export type SubCategory = {
+  title: string;
+  products: Product[];
+};
+
+export type ProductCategory = {
+  id: number;
+  title: string;
+  products: Product[] | SubCategory[];
+};
+
+const productsData: ProductCategory[] = [
   {
     id: 1,
     title: "lift",
     products: [
       {
-        slug: "hd-v002",
-        product_name: "WBJX-K-01",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-01.png",
+        title: "residence",
+        products: [
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-02",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-02.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-03",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-03.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-04",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-04.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-05",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-05.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-06",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-06.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-07",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-07.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-08",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-08.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-09",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-09.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-10",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-10.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-11",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-11.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-12",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-12.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-13",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-13.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-14",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-14.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-15",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-15.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-16",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-16.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-17",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-17.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-18",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-18.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-19",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-19.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-20",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-20.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-21",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-21.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-22",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-22.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-23",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-23.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-24",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-24.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-25",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-25.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-26",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-26.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-27",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-27.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-28",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-28.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-29",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-29.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-30",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-30.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-31",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-31.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-32",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-32.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-33",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-33.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-34",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-34.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-35",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-35.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-36",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-36.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-37",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-37.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-38",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-38.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-39",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-39.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-40",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-40.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-41",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-41.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-42",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-42.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-43",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-43.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-44",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-44.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-45",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-45.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-46",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-46.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-47",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-47.png",
+          },
+        ],
       },
       {
-        slug: "hd-v002",
-        product_name: "WBJX-K-02",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-02.png",
+        title: "corporate",
+        products: [
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-42",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-k-42.png",
+          },
+        ],
       },
       {
-        slug: "hd-v002",
-        product_name: "WBJX-K-03",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-03.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-04",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-04.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-05",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-05.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-06",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-06.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-07",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-07.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-08",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-08.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-09",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-09.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-10",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-10.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-11",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-11.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-12",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-12.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-13",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-13.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-14",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-14.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-15",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-15.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-16",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-16.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-17",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-17.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-18",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-18.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-19",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-19.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-20",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-20.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-21",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-21.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-22",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-22.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-23",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-23.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-24",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-24.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-25",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-25.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-26",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-26.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-27",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-27.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-28",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-28.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-29",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-29.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-30",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-30.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-31",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-31.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-32",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-32.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-33",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-33.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-34",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-34.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-35",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-35.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-36",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-36.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-37",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-37.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-38",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-38.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-39",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-39.png",
-      },
-      {
-        slug: "hd-v002",
-        product_name: "WBJX-K-40",
-        category: "lift",
-        product_img: "/assets/images/products/lifts/wbjx-k-40.png",
+        title: "hospital",
+        products: [
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-42",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-y-01.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-42",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-y-02.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-K-42",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-y-03.png",
+          },
+        ],
       },
     ],
   },
-
-  // Genarators
   {
     id: 6,
     title: "genarator",
     products: [
       {
         product_name: "Genarator",
-        category: "lift",
+        category: "genarator",
         product_img: "/assets/images/products/controller.png",
       },
     ],
   },
-  //  Substrations
   {
     id: 7,
     title: "substration",
     products: [
       {
         product_name: "Substration",
-        category: "lift",
+        category: "substration",
         product_img: "/assets/images/products/controller.png",
       },
     ],
