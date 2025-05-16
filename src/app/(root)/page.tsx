@@ -7,9 +7,8 @@ import ProductShowcase from "@/components/Home/ProductShowcase";
 import ServicesSection from "@/components/Home/ServicesSection";
 import WorkSteps from "@/components/Home/WorkSteps";
 import { generateMetaTags } from "@/lib/genarateMetaTags";
-import { generateJsonLd } from "@/lib/generateJsonLd";
 import { Metadata } from "next";
-import Head from "next/head";
+
 
 //>> SEO Start
 export const metadata: Metadata = generateMetaTags({
@@ -23,23 +22,6 @@ export const metadata: Metadata = generateMetaTags({
 });
 //>> SEO End
 
-// ✅ JSON-LD for the homepage
-const organizationJsonLd = generateJsonLd("Organization", {
-  name: "A1 Lifts and Engineering",
-  url: "https://www.a1-lifts.com",
-  logo: "https://www.a1-lifts.com/icon.png",
-  sameAs: [
-    "https://www.facebook.com/a1lifts",
-    "https://www.linkedin.com/company/a1-lifts",
-  ],
-
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+8801902884266",
-    contactType: "Customer Service",
-  },
-});
-
 const HomePage = () => {
   return (
     <>
@@ -51,13 +33,7 @@ const HomePage = () => {
       <WorkSteps />
       <FAQ />
       <ContactCards />
-      {/* ✅ Inject JSON-LD into the head */}
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={organizationJsonLd}
-        />
-      </Head>
+  
     </>
   );
 };
