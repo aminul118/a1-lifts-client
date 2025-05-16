@@ -27,7 +27,7 @@ const steps = [
 
 const WorkSteps = () => {
   return (
-    <Container className="2xl:h-[800px]">
+    <Container>
       <div className="text-center mb-12">
         <h2 className="text-orange-500 uppercase font-medium">Work Process</h2>
         <h3 className="text-3xl font-bold mt-2 text-gray-900 dark:text-white">

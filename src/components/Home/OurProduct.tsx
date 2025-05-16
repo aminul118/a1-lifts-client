@@ -3,15 +3,15 @@ import Link from "next/link";
 import React from "react";
 import Container from "../ui/Container";
 import SectionTitle from "../ui/SectionTitle";
-import { servicesHoverMenu } from "@/lib/constants/hoverMenu";
+import { productsHoverMenu } from "@/lib/constants/hoverMenu";
 import { Card } from "../ui/card";
 
-const OurServices = () => {
+const OurProducts = () => {
   return (
-    <Container backgroundColor="2xl:h-[800px]">
-      <SectionTitle title="Our Services" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-10">
-        {servicesHoverMenu?.map((menu, i) => (
+    <Container>
+      <SectionTitle title="Our Products" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10">
+        {productsHoverMenu?.map((menu, i) => (
           <Card key={i} className="py-0">
             <Link
               href={menu.href}
@@ -38,4 +38,4 @@ const OurServices = () => {
   );
 };
 
-export default OurServices;
+export default OurProducts;

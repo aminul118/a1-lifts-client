@@ -1,14 +1,14 @@
-import OurServices from "@/components/common/OurServices";
+import OurServices from "@/components/Home/OurServices";
 import WhyA1Lifts from "@/components/common/WhyA1Lifts";
 import ContactCards from "@/components/Home/ContactCards";
 import FAQ from "@/components/Home/FAQ";
 import HeroSlider from "@/components/Home/HeroSlider";
+import OurProducts from "@/components/Home/OurProduct";
 import ProductShowcase from "@/components/Home/ProductShowcase";
 import ServicesSection from "@/components/Home/ServicesSection";
 import WorkSteps from "@/components/Home/WorkSteps";
 import { generateMetaTags } from "@/lib/genarateMetaTags";
 import { Metadata } from "next";
-
 
 //>> SEO Start
 export const metadata: Metadata = generateMetaTags({
@@ -24,8 +24,9 @@ export const metadata: Metadata = generateMetaTags({
 
 const HomePage = () => {
   return (
-    <>
+    <div className="space-y-8 lg:space-y-12">
       <HeroSlider />
+      <OurProducts />
       <OurServices />
       <ProductShowcase />
       <ServicesSection />
@@ -33,8 +34,7 @@ const HomePage = () => {
       <WorkSteps />
       <FAQ />
       <ContactCards />
-  
-    </>
+    </div>
   );
 };
 
