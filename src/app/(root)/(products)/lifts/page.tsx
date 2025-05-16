@@ -3,6 +3,9 @@ import SectionBanner from "@/components/ui/SectionBanner";
 import { generateMetaTags } from "@/lib/genarateMetaTags";
 import { Metadata } from "next";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Download } from "lucide-react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 //>> SEO Start
 
@@ -34,6 +37,9 @@ const LiftsPage = () => {
             <TabsTrigger value="lift">All</TabsTrigger>
             <TabsTrigger value="residence">Residence</TabsTrigger>
             <TabsTrigger value="hospital">Hospital</TabsTrigger>
+            <TabsTrigger value="manual">
+              <Download /> Manual
+            </TabsTrigger>
           </TabsList>
           {/* Content */}
           <TabsContent value="lift">
@@ -46,6 +52,23 @@ const LiftsPage = () => {
           </TabsContent>
           <TabsContent value="hospital">
             <ProductsCard category="lift" subcategory="hospital" />
+          </TabsContent>
+          <TabsContent value="manual">
+            <div className="container mx-auto h-[80vh] pb-24 ">
+              <div className="py-8 text-center">
+                <Link href="/assets/images/products/lifts/Cabin_design_Webstar.pdf">
+                  <Button variant="outline">
+                    <Download /> Download Manual Book
+                  </Button>
+                </Link>
+              </div>
+              <iframe
+                src="https://drive.google.com/file/d/1Uj154nbwwa0_uBzan-oFgbhVZbec92Qg/preview"
+                width="100%"
+                height="100%"
+                allow="autoplay"
+              />
+            </div>
           </TabsContent>
         </Tabs>
       </div>

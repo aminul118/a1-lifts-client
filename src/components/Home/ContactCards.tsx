@@ -1,5 +1,6 @@
 import { Mail, Phone } from "lucide-react";
 import Container from "../ui/Container";
+import Link from "next/link";
 
 const ContactCards = () => {
   return (
@@ -32,9 +33,12 @@ const ContactCards = () => {
           <div>
             <p className="font-medium">Mail Us Anytime</p>
             <h2 className="text-xl sm:text-2xl font-bold">
-              <a href="mailto:contact@a1-lifts.com" className="hover:underline">
+              <Link
+                href="mailto:contact@a1-lifts.com"
+                className="hover:underline"
+              >
                 contact@a1-lifts.com
-              </a>
+              </Link>
             </h2>
             <p className="text-white text-opacity-90">
               Mail 24/7 Anytime For Your Problem
