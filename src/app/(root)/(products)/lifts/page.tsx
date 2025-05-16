@@ -38,7 +38,7 @@ const LiftsPage = () => {
             <TabsTrigger value="residence">Residence</TabsTrigger>
             <TabsTrigger value="hospital">Hospital</TabsTrigger>
             <TabsTrigger value="manual">
-              <Download /> Manual
+               Manual
             </TabsTrigger>
           </TabsList>
           {/* Content */}
@@ -54,20 +54,22 @@ const LiftsPage = () => {
             <ProductsCard category="lift" subcategory="hospital" />
           </TabsContent>
           <TabsContent value="manual">
-            <div className="container mx-auto h-[80vh] pb-24 ">
-              <div className="py-8 text-center">
-                <Link href="/assets/images/products/lifts/Cabin_design_Webstar.pdf">
-                  <Button variant="outline">
-                    <Download /> Download Manual Book
-                  </Button>
+            <div className="py-10 flex items-center justify-center">
+              <Button
+                variant="outline"
+                asChild
+                className="gap-2 px-6 py-4 text-base"
+              >
+                <Link
+                  href="/assets/images/products/lifts/Cabin_design_Webstar.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+                >
+                  <Download className="w-5 h-5" />
+                  Download Manual Book (PDF)
                 </Link>
-              </div>
-              <iframe
-                src="https://drive.google.com/file/d/1Uj154nbwwa0_uBzan-oFgbhVZbec92Qg/preview"
-                width="100%"
-                height="100%"
-                allow="autoplay"
-              />
+              </Button>
             </div>
           </TabsContent>
         </Tabs>
