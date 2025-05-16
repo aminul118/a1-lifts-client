@@ -9,7 +9,7 @@ const ProductsCard = ({ category }: { category: string }) => {
     .flatMap((item) => item.products);
   return (
     <Container className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-      {products.map((product, i) => (
+      {products?.map((product, i) => (
         <Card key={i} className="p-0">
           <CardContent className="p-0">
             <Image
@@ -17,6 +17,7 @@ const ProductsCard = ({ category }: { category: string }) => {
               alt={product.product_name}
               height={400}
               width={400}
+              className="h-[180px] lg:h-[400px] 2xl:h-[500px] object-cover"
             />
             <p className="text-center py-2">{product.product_name}</p>
           </CardContent>
