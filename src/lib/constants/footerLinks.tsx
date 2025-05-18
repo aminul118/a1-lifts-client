@@ -3,12 +3,12 @@ import { FaFacebook, FaLinkedin } from "react-icons/fa";
 const socialLinks = [
   {
     icon: <FaFacebook />,
-    href: "https://www.linkedin.com/company/a1-lifts-engineering",
+    href: "https://www.facebook.com/a1lifts",
     name: "Facebook icon",
   },
   {
     icon: <FaLinkedin />,
-    href: "https://www.facebook.com/a1lifts",
+    href: "https://www.linkedin.com/company/a1-lifts-engineering",
     name: "Linkedin icon",
   },
 ];
