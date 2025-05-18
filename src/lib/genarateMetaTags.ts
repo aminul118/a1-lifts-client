@@ -15,7 +15,7 @@ export const generateMetaTags = ({
     title,
     description,
     keywords,
-    category: "Healthcare Services",
+    category: "Commercial & Industrial Equipment Supplier",
     openGraph: {
       type: "website",
       url: `${baseUrl}/${path}`,
@@ -29,15 +29,15 @@ export const generateMetaTags = ({
       card: "summary_large_image",
       site: "@a1lifts",
       creator: "@a1liftsandengineering",
-      images: image,
       title,
       description,
+      images: image,
     },
     applicationName: "A1 Lifts and Engineering",
     alternates: {
       canonical: `${baseUrl}/${path}`,
       languages: {
-        "en-US": "https://a1-lifts.com/en-US",
+        "en-US": `${baseUrl}/en-US`,
       },
     },
     facebook: { appId: "580317868506376" },
