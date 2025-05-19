@@ -39,7 +39,7 @@ const productsHoverMenu = [
   },
   {
     name: "HBAC",
-    image: "/assets/images/about/substation-installed.jpg",
+    image: "/assets/images/products/hbac/2.png",
     href: "/hbac",
   },
 ];

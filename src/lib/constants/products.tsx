@@ -360,6 +360,32 @@ const productsData: ProductCategory[] = [
       },
     ],
   },
+  {
+    id: 8,
+    title: "hbac",
+    products: [
+      {
+        product_name: "",
+        category: "substration",
+        product_img: "/assets/images/products/hbac/1.png",
+      },
+      {
+        product_name: "",
+        category: "substration",
+        product_img: "/assets/images/products/hbac/2.png",
+      },
+      {
+        product_name: "",
+        category: "substration",
+        product_img: "/assets/images/products/hbac/3.png",
+      },
+      {
+        product_name: "",
+        category: "substration",
+        product_img: "/assets/images/products/hbac/4.png",
+      },
+    ],
+  },
 ];
 
 export default productsData;
