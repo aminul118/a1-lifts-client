@@ -37,6 +37,11 @@ const productsHoverMenu = [
     image: "/assets/images/about/substation-installed.jpg",
     href: "/substations",
   },
+  {
+    name: "HBAC",
+    image: "/assets/images/about/substation-installed.jpg",
+    href: "/hbac",
+  },
 ];
 
 export { servicesHoverMenu, productsHoverMenu };

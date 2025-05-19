@@ -2,6 +2,7 @@ import productsData, { Product, SubCategory } from "@/lib/constants/products";
 import { Card, CardContent } from "../ui/card";
 import Container from "../ui/Container";
 import Image from "next/image";
+import { PackageSearch } from "lucide-react";
 
 type Props = {
   category?: string;
@@ -25,7 +26,10 @@ const ProductsCard = ({ category, subcategory }: Props) => {
 
   if (!matchedCategory) {
     return (
-      <p className="text-center">No products found for category: {category}</p>
+      <div className="flex flex-col justify-center items-center h-96 font-semibold md:text-2xl gap-6">
+        <PackageSearch size={80} />
+        <p className="text-center"> No products found</p>
+      </div>
     );
   }
 
