@@ -34,7 +34,7 @@ const LiftsPage = () => {
       <div className="py-8 lg:py-14 xl:py-16 2xl:py-24">
         <Tabs defaultValue="lift">
           {/* Tab lists */}
-          <TabsList className="max-w-lg ">
+          <TabsList className="max-w-lg px-1">
             <TabsTrigger value="lift">All</TabsTrigger>
             <TabsTrigger value="residence">Residence</TabsTrigger>
             <TabsTrigger value="hospital">Hospital</TabsTrigger>
