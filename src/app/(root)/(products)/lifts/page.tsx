@@ -31,10 +31,10 @@ const LiftsPage = () => {
         backgroundImagePath="/assets/backgrounds/electrical-substation.jpeg"
       />
 
-      <div className="py-8 lg:py-14 xl:py-16 2xl:py-24">
+      <div className="py-8 lg:py-14 xl:py-16 2xl:py-24 px-1">
         <Tabs defaultValue="lift">
           {/* Tab lists */}
-          <TabsList className="max-w-lg px-1">
+          <TabsList className="max-w-lg">
             <TabsTrigger value="lift">All</TabsTrigger>
             <TabsTrigger value="residence">Residence</TabsTrigger>
             <TabsTrigger value="hospital">Hospital</TabsTrigger>

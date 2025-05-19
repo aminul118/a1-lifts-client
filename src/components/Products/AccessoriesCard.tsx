@@ -13,7 +13,7 @@ const AccessoriesCard = ({ category, className, grid }: Accessories) => {
   const accessories = liftAccessories.filter(
     (product) => product.category === category
   );
-  console.log(accessories);
+  // console.log(accessories);
   return (
     <Container>
       <p className="capitalize text-center py-6 text-2xl font-semibold">
