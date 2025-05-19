@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Download } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import AccessoriesCard from "@/components/Products/AccessoriesCard";
 
 //>> SEO Start
 
@@ -37,9 +38,8 @@ const LiftsPage = () => {
             <TabsTrigger value="lift">All</TabsTrigger>
             <TabsTrigger value="residence">Residence</TabsTrigger>
             <TabsTrigger value="hospital">Hospital</TabsTrigger>
-            <TabsTrigger value="manual">
-               Manual
-            </TabsTrigger>
+            <TabsTrigger value="accessories">Accessories</TabsTrigger>
+            <TabsTrigger value="manual">Manual</TabsTrigger>
           </TabsList>
           {/* Content */}
           <TabsContent value="lift">
@@ -52,6 +52,18 @@ const LiftsPage = () => {
           </TabsContent>
           <TabsContent value="hospital">
             <ProductsCard category="lift" subcategory="hospital" />
+          </TabsContent>
+          <TabsContent value="accessories">
+            <AccessoriesCard
+              className="h-[120px] object-cover bg-white"
+              category="celling"
+              grid="grid grid-cols-1 lg:grid-cols-4 2xl:grid-cols-6 gap-6"
+            />
+            <AccessoriesCard
+              className="h-[200px] lg:h-[300px] 2xl:h-[440px]  object-cover bg-white"
+              category="landing-door"
+              grid="grid grid-cols-2 lg:grid-cols-4 gap-6"
+            />
           </TabsContent>
           <TabsContent value="manual">
             <div className="py-10 flex items-center justify-center">
