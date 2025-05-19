@@ -1,6 +1,5 @@
 import OurServices from "@/components/Home/OurServices";
 import WhyA1Lifts from "@/components/common/WhyA1Lifts";
-import ContactCards from "@/components/Home/ContactCards";
 import FAQ from "@/components/Home/FAQ";
 import HeroSlider from "@/components/Home/HeroSlider";
 import OurProducts from "@/components/Home/OurProduct";
@@ -35,7 +34,6 @@ const HomePage = () => {
       <WhyA1Lifts />
       <WorkSteps />
       <FAQ />
-      <ContactCards />
     </div>
   );
 };

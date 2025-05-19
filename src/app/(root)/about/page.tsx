@@ -1,10 +1,10 @@
 import AboutUs from "@/components/About/AboutUs";
 import CertificationGallary from "@/components/About/CertificationGallary";
 import MissionVission from "@/components/About/MissionVission";
-import OurManagementTeam from "@/components/About/OurManagementTeam";
 import ProfessionalService from "@/components/About/ProfessionalService";
 import AboutCompany from "@/components/common/AboutCompany";
 import WhyA1Lifts from "@/components/common/WhyA1Lifts";
+import ContactCards from "@/components/Home/ContactCards";
 import SectionBanner from "@/components/ui/SectionBanner";
 import { generateMetaTags } from "@/lib/genarateMetaTags";
 import { Metadata } from "next";
@@ -35,9 +35,10 @@ const AboutPage = () => {
       <AboutCompany />
       <AboutUs />
       <MissionVission />
-      <OurManagementTeam />
+      {/* <OurManagementTeam /> */}
       <CertificationGallary />
       <ProfessionalService />
+      <ContactCards />
       <WhyA1Lifts />
     </>
   );
