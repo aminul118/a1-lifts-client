@@ -36,6 +36,11 @@ const sitemap = (): MetadataRoute.Sitemap => {
       priority: 0.6,
     },
     {
+      url: "hbac",
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
       url: "substations",
       changeFrequency: "monthly",
       priority: 0.6,
