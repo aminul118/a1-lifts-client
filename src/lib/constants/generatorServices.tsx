@@ -32,13 +32,12 @@ const generatorServices: Services[] = [
     ],
   },
   {
-    service: "Commercial & Industrial Generator Setup",
-    image: "/assets/images/services/commercial-generators.jpg",
+    service: "Engine Overhauling",
+    image: "/assets/images/services/overhauling.webp",
     details: [
-      "Heavy-duty generator installation for businesses, factories, hospitals, and office complexes.",
-      "Custom sizing and configuration to support critical equipment and operations.",
-      "Noise reduction, fuel efficiency, and emission control considerations.",
-      "Complete commissioning and safety testing by certified engineers.",
+      "Complete disassembly, inspection, and cleaning of generator engine components to restore peak performance.",
+      "Replacement or reconditioning of worn-out parts such as pistons, bearings, gaskets, and seals.",
+      "Final testing and tuning by certified technicians to ensure optimal efficiency, reliability, and safety.",
     ],
   },
   {

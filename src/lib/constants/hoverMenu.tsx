@@ -34,7 +34,7 @@ const productsHoverMenu = [
   },
   {
     name: "Substation",
-    image: "/assets/images/about/substation-installed.jpg",
+    image: "/assets/images/about/transformer.webp",
     href: "/substations",
   },
   {
