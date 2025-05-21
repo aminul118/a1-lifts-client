@@ -31,7 +31,7 @@ const footerLinks = [
       { label: "Lifts", href: "/lifts" },
       { label: "Genarators", href: "/genarators" },
       { label: "Substations", href: "/substations" },
-      { label: "HBAC", href: "/hbac" },
+      { label: "HBAC", href: "/hvac" },
     ],
   },
   {
