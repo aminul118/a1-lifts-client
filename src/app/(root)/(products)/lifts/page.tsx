@@ -1,5 +1,4 @@
 import ProductsCard from "@/components/Products/ProductCard";
-import SectionBanner from "@/components/ui/SectionBanner";
 import { generateMetaTags } from "@/lib/genarateMetaTags";
 import { Metadata } from "next";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -26,13 +25,7 @@ export const metadata: Metadata = generateMetaTags({
 const LiftsPage = () => {
   return (
     <>
-      <SectionBanner
-        heading="Lifts"
-        className="text-white"
-        backgroundImagePath="/assets/backgrounds/electrical-substation.jpeg"
-      />
       <LiftVideo />
-
       <div className="py-8 lg:py-14 xl:py-16 2xl:py-24 px-1">
         <Tabs defaultValue="lift">
           {/* Tab lists */}
