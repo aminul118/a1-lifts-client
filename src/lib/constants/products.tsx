@@ -412,24 +412,29 @@ const productsData: ProductCategory[] = [
     title: "hvac",
     products: [
       {
-        product_name: "",
-        category: "substration",
-        product_img: "/assets/images/products/hbac/1.png",
-      },
-      {
-        product_name: "",
+        product_name: "Water Cooled Chiller",
         category: "substration",
         product_img: "/assets/images/products/hbac/2.png",
       },
       {
-        product_name: "",
+        product_name: "Water Cooled Chiller",
         category: "substration",
-        product_img: "/assets/images/products/hbac/3.png",
+        product_img: "/assets/images/products/hbac/Air-Cooled-Chiller.jpg",
       },
       {
-        product_name: "",
+        product_name: "Heat Pump",
         category: "substration",
-        product_img: "/assets/images/products/hbac/4.png",
+        product_img: "/assets/images/products/hbac/Heat-Pump.jpg",
+      },
+      {
+        product_name: "Airside",
+        category: "substration",
+        product_img: "/assets/images/products/hbac/Airside.jpg",
+      },
+      {
+        product_name: "Speciality Products",
+        category: "substration",
+        product_img: "/assets/images/products/hbac/Speciality-Products.jpg",
       },
     ],
   },
