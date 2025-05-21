@@ -57,7 +57,7 @@ const ProductsCard = ({ category, subcategory }: Props) => {
           {/* <SectionTitle title={subcategory} /> */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {matchedSub.products.map((product, i) => (
-              <Card key={i} className="p-0">
+              <Card data-aos="fade-up" key={i} className="p-0">
                 <CardContent className="p-0">
                   <Image
                     src={product.product_img}
@@ -81,7 +81,7 @@ const ProductsCard = ({ category, subcategory }: Props) => {
     return (
       <Container className="grid grid-cols-2 lg:grid-cols-4 gap-6">
         {allProducts.map((product, i) => (
-          <Card key={i} className="p-0">
+          <Card data-aos="fade-up" key={i} className="p-0">
             <CardContent className="p-0">
               <Image
                 src={product.product_img}
@@ -102,7 +102,7 @@ const ProductsCard = ({ category, subcategory }: Props) => {
   return (
     <Container className="grid grid-cols-2 lg:grid-cols-4 gap-6">
       {(products as Product[]).map((product, i) => (
-        <Card key={i} className="p-0">
+        <Card data-aos="fade-up" key={i} className="p-0">
           <CardContent className="p-0">
             <Image
               src={product.product_img}
