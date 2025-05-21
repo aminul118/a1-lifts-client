@@ -2,11 +2,9 @@ import ProductsCard from "@/components/Products/ProductCard";
 import { generateMetaTags } from "@/lib/genarateMetaTags";
 import { Metadata } from "next";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Download } from "lucide-react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import AccessoriesCard from "@/components/Products/AccessoriesCard";
 import LiftVideo from "@/components/Home/LiftVideo";
+import ManualDownload from "@/components/common/ManualDownload";
 
 //>> SEO Start
 
@@ -61,23 +59,7 @@ const LiftsPage = () => {
             />
           </TabsContent>
           <TabsContent value="manual">
-            <div className="py-10 flex items-center justify-center">
-              <Button
-                variant="outline"
-                asChild
-                className="gap-2 px-6 py-4 text-base"
-              >
-                <Link
-                  href="/assets/images/products/lifts/Cabin_design_Webstar.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  download
-                >
-                  <Download className="w-5 h-5" />
-                  Download Manual Book (PDF)
-                </Link>
-              </Button>
-            </div>
+            <ManualDownload filePath="/assets/pdf/Cabin_design_Webstar.pdf" />
           </TabsContent>
         </Tabs>
       </div>

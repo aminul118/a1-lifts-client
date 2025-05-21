@@ -1,3 +1,4 @@
+import ManualDownload from "@/components/common/ManualDownload";
 import { Card } from "@/components/ui/card";
 import Container from "@/components/ui/Container";
 import SectionBanner from "@/components/ui/SectionBanner";
@@ -26,7 +27,7 @@ const GenaratorsPage = () => {
         className="text-white"
         backgroundImagePath="/assets/backgrounds/genarator.jpg"
       />
-
+      <ManualDownload filePath="/assets/pdf/genarators-manual.pdf" />
       <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
         {genaratorData?.map((genarator) => {
           const {
