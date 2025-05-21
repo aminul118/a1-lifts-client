@@ -25,7 +25,7 @@ const HbacPage = () => {
         className="text-white"
         backgroundImagePath="/assets/backgrounds/electrical-substation.jpeg"
       />
-      <ProductsCard category="hbac" />
+      <ProductsCard category="hvac" />
     </div>
   );
 };

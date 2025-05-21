@@ -336,6 +336,53 @@ const productsData: ProductCategory[] = [
           },
         ],
       },
+      {
+        title: "capsole",
+        products: [
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-G-02",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-g-02.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-G-03",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-g-03.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-G-04",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-g-04.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-G-05",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-g-05.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-G-06",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-g-06.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-G-07",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-g-07.png",
+          },
+          {
+            slug: "hd-v002",
+            product_name: "WBJX-G-08",
+            category: "lift",
+            product_img: "/assets/images/products/lifts/wbjx-g-08.png",
+          },
+        ],
+      },
     ],
   },
   {
@@ -362,7 +409,7 @@ const productsData: ProductCategory[] = [
   },
   {
     id: 8,
-    title: "hbac",
+    title: "hvac",
     products: [
       {
         product_name: "",
