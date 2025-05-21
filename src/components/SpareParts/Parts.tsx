@@ -8,7 +8,7 @@ const Parts = () => {
     <Container>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {partsData.map((parts) => (
-          <Card key={parts.id}>
+          <Card data-aos="fade-up" key={parts.id}>
             <CardContent>
               <Image
                 src={parts.product_img}
