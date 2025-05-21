@@ -9,6 +9,7 @@ import WorkSteps from "@/components/Home/WorkSteps";
 import { generateMetaTags } from "@/lib/genarateMetaTags";
 import { Metadata } from "next";
 import AllProducts from "@/components/Home/AllProducts";
+import GenaratorRent from "@/components/Home/GenaratorRent";
 
 //>> SEO Start
 export const metadata: Metadata = generateMetaTags({
@@ -28,6 +29,7 @@ const HomePage = () => {
       <HeroSlider />
       <OurProducts />
       <AllProducts />
+      <GenaratorRent />
       <OurServices />
       <ProductShowcase />
       <ServicesSection />
