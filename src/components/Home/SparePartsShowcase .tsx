@@ -9,7 +9,10 @@ import Image from "next/image";
 import SectionTitle from "../ui/SectionTitle";
 import { Card, CardContent } from "../ui/card";
 
-const ProductShowcase = () => {
+const SparePartsShowcase = () => {
+  // Flatten all products from all categories
+  const allProducts = partsData.flatMap((category) => category.products);
+
   return (
     <section className="container mx-auto">
       <SectionTitle title="Spare Parts" />
@@ -37,18 +40,18 @@ const ProductShowcase = () => {
         modules={[Pagination, Autoplay]}
         className="mySwiper"
       >
-        {partsData?.map((data, i) => (
+        {allProducts.map((product, i) => (
           <SwiperSlide key={i}>
             <Card className="rounded-none">
-              <CardContent>
+              <CardContent className="flex flex-col items-center gap-4">
                 <Image
-                  src={data?.product_img}
-                  alt={data?.product_name}
-                  width={400}
-                  height={400}
+                  src={product.product_img}
+                  alt={product.product_name}
+                  width={300}
+                  height={300}
                 />
                 <p className="text-center font-semibold">
-                  {data?.product_name}
+                  {product.product_name}
                 </p>
               </CardContent>
             </Card>
@@ -59,4 +62,4 @@ const ProductShowcase = () => {
   );
 };
 
-export default ProductShowcase;
+export default SparePartsShowcase;

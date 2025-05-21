@@ -3,7 +3,7 @@ import WhyA1Lifts from "@/components/common/WhyA1Lifts";
 import FAQ from "@/components/Home/FAQ";
 import HeroSlider from "@/components/Home/HeroSlider";
 import OurProducts from "@/components/Home/OurProduct";
-import ProductShowcase from "@/components/Home/ProductShowcase";
+import ProductShowcase from "@/components/Home/SparePartsShowcase ";
 import ServicesSection from "@/components/Home/ServicesSection";
 import WorkSteps from "@/components/Home/WorkSteps";
 import { generateMetaTags } from "@/lib/genarateMetaTags";
