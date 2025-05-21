@@ -7,6 +7,7 @@ import { Download } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import AccessoriesCard from "@/components/Products/AccessoriesCard";
+import LiftVideo from "@/components/Home/LiftVideo";
 
 //>> SEO Start
 
@@ -30,6 +31,7 @@ const LiftsPage = () => {
         className="text-white"
         backgroundImagePath="/assets/backgrounds/electrical-substation.jpeg"
       />
+      <LiftVideo />
 
       <div className="py-8 lg:py-14 xl:py-16 2xl:py-24 px-1">
         <Tabs defaultValue="lift">

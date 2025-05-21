@@ -23,7 +23,7 @@ const GenaratorsPage = () => {
       <SectionBanner
         heading="Genarators"
         className="text-white"
-        backgroundImagePath="/assets/backgrounds/electrical-substation.jpeg"
+        backgroundImagePath="/assets/backgrounds/genarator.jpg"
       />
       <ProductsCard category="genarator" />
     </div>
