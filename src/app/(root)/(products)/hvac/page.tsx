@@ -1,3 +1,4 @@
+import ManualDownload from "@/components/common/ManualDownload";
 import ProductsCard from "@/components/Products/ProductCard";
 import SectionBanner from "@/components/ui/SectionBanner";
 import { generateMetaTags } from "@/lib/genarateMetaTags";
@@ -25,6 +26,7 @@ const HbacPage = () => {
         className="text-white"
         backgroundImagePath="/assets/backgrounds/electrical-substation.jpeg"
       />
+      <ManualDownload filePath="/assets/pdf/genarators-manual.pdf" />
       <ProductsCard category="hvac" />
     </div>
   );
