@@ -21,7 +21,7 @@ const SubstationsPage = () => {
   return (
     <div>
       <SectionBanner
-        heading="Substrations"
+        heading="Substations"
         className="text-white"
         backgroundImagePath="/assets/backgrounds/electrical-substation.jpeg"
       />

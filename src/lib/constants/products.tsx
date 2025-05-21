@@ -401,9 +401,25 @@ const productsData: ProductCategory[] = [
     title: "substration",
     products: [
       {
-        product_name: "Substration",
+        product_name: "Transformer",
         category: "substration",
-        product_img: "/assets/images/products/controller.png",
+        product_img: "/assets/images/products/substration/transformer.webp",
+      },
+      {
+        product_name: "BOP Substation PMT Switching",
+        category: "substration",
+        product_img:
+          "/assets/images/products/substration/BOP-Substation-PMT-Switching.jpg",
+      },
+      {
+        product_name: "Grounding",
+        category: "substration",
+        product_img: "/assets/images/products/substration/grounding.jpg",
+      },
+      {
+        product_name: "Substation EPC",
+        category: "substration",
+        product_img: "/assets/images/products/substration/substation-epc.jpg",
       },
     ],
   },
