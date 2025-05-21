@@ -39,7 +39,7 @@ const productsHoverMenu = [
   },
   {
     name: "HVAC",
-    image: "/assets/images/products/hbac/2.png",
+    image: "/assets/images/products/hbac/Speciality-Products.jpg",
     href: "/hvac",
   },
 ];

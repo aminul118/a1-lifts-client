@@ -414,11 +414,6 @@ const productsData: ProductCategory[] = [
       {
         product_name: "Water Cooled Chiller",
         category: "substration",
-        product_img: "/assets/images/products/hbac/2.png",
-      },
-      {
-        product_name: "Water Cooled Chiller",
-        category: "substration",
         product_img: "/assets/images/products/hbac/Air-Cooled-Chiller.jpg",
       },
       {
@@ -435,6 +430,11 @@ const productsData: ProductCategory[] = [
         product_name: "Speciality Products",
         category: "substration",
         product_img: "/assets/images/products/hbac/Speciality-Products.jpg",
+      },
+      {
+        product_name: "Light Commercial Range",
+        category: "substration",
+        product_img: "/assets/images/products/hbac/Light-Commercial-Range.jpg",
       },
     ],
   },
