@@ -38,9 +38,9 @@ const productsHoverMenu = [
     href: "/substations",
   },
   {
-    name: "HBAC",
+    name: "HVAC",
     image: "/assets/images/products/hbac/2.png",
-    href: "/hbac",
+    href: "/hvac",
   },
 ];
 

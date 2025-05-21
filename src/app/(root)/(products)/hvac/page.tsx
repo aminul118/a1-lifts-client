@@ -21,7 +21,7 @@ const HbacPage = () => {
   return (
     <div>
       <SectionBanner
-        heading="HBAC"
+        heading="HVAC"
         className="text-white"
         backgroundImagePath="/assets/backgrounds/electrical-substation.jpeg"
       />
