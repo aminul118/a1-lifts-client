@@ -2,6 +2,8 @@ import Parts from "@/components/SpareParts/Parts";
 import SectionBanner from "@/components/ui/SectionBanner";
 import { generateMetaTags } from "@/lib/genarateMetaTags";
 import { Metadata } from "next";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Container from "@/components/ui/Container";
 
 //>> SEO Start
 
@@ -25,7 +27,28 @@ const SpareParts = () => {
         backgroundImagePath="/assets/images/services/elevator-maintenance.png"
         className="text-white"
       />
-      <Parts />
+      <Container>
+        <Tabs defaultValue="lifts">
+          <TabsList className="max-w-lg">
+            <TabsTrigger value="lifts">Lifts</TabsTrigger>
+            <TabsTrigger value="genarators">Genarator</TabsTrigger>
+            <TabsTrigger value="substations">Substation</TabsTrigger>
+            <TabsTrigger value="hvacs">HVAC</TabsTrigger>
+          </TabsList>
+          <TabsContent value="lifts">
+            <Parts category="lift" />
+          </TabsContent>
+          <TabsContent value="genarators">
+            <Parts category="genarators" />
+          </TabsContent>
+          <TabsContent value="substations">
+            <Parts category="substations" />
+          </TabsContent>
+          <TabsContent value="hvacs">
+            <Parts category="hvacs" />
+          </TabsContent>
+        </Tabs>
+      </Container>
     </div>
   );
 };
