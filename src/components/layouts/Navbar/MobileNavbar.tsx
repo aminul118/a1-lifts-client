@@ -34,8 +34,8 @@ const MobileNavbar = () => {
 
   return (
     <header className=" md:hidden fixed top-0 left-0 right-0 z-50 bg-slate-900 py-2">
-      <nav className="container mx-auto flex justify-between items-center px-4 py-2">
-        <Logo size={40} />
+      <nav className="container mx-auto flex justify-between items-center px-4">
+        <Logo height={50} width={180} />
 
         <Menu
           onClick={() => setMobileSidebarOpen(!mobileSidebarOpen)}

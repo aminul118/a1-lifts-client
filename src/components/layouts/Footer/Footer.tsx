@@ -10,7 +10,7 @@ export default function Footer() {
       <div className=" grid grid-cols-1 gap-12 lg:flex lg:justify-between container mx-auto">
         {/* Logo and Socials */}
         <div>
-          <Logo size={70} />
+          <Logo width={320} height={80} />
           <p className=" my-6">
             Bringing you the best solutions for your business. <br />
             Connect with us for a seamless experience.

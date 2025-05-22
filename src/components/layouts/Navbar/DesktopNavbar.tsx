@@ -18,8 +18,8 @@ const DesktopNavbar = () => {
   return (
     <header className="hidden md:block w-full bg-slate-800 fixed z-50 py-2 top-0 ">
       <nav className="relative container mx-auto">
-        <div className="container mx-auto flex items-center justify-between px-4 py-2">
-          <Logo size={50} />
+        <div className="container mx-auto flex items-center justify-between px-4 py-1">
+          <Logo height={60} width={220} />
 
           <ul className="flex items-center gap-6 lg:gap-10 text-[1rem]">
             <li>
