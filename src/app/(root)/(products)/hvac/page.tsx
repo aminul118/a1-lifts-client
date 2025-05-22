@@ -26,7 +26,7 @@ const HbacPage = () => {
         className="text-white"
         backgroundImagePath="/assets/backgrounds/electrical-substation.jpeg"
       />
-      <ManualDownload filePath="/assets/pdf/genarators-manual.pdf" />
+      <ManualDownload filePath="/assets/pdf/hvac-manual.pdf" />
       <ProductsCard category="hvac" />
     </div>
   );
