@@ -67,33 +67,12 @@ const genaratorData = [
     products: [
       {
         id: 1,
-        product_name:
-          "Air-Cooled Open Frame Type Single Cylinder Diesel Generator Set",
+        product_name: "Powerlink Generator",
         image: "/assets/images/products/genarator/residental1.png",
-        rated_voltage: "240V",
+        rated_voltage: "400/230V, 110-480V, 220V / 380V, 110V / 240V, 380V",
         warranty: "12 Months/1000 Hours",
         Frequency: "50/60HZ Rated",
-        Power: "20KVA-1800KVA",
-      },
-      {
-        id: 2,
-        product_name:
-          "5kw Open Frame Hr186fa Engine Diesel Generator Set (DG6000E) Maintenance Easily",
-        image: "/assets/images/products/genarator/residental2.png",
-        rated_voltage: "240V",
-        warranty: "12 Months/1000 Hours",
-        Frequency: "50/60HZ Rated",
-        Power: "20KVA-1800KVA",
-      },
-      {
-        id: 3,
-        product_name:
-          "Open Type Diesel Genset Optional Wheels Diesel Generator Set (DG6000E)",
-        image: "/assets/images/products/genarator/residental3.png",
-        rated_voltage: "240V",
-        warranty: "12 Months/1000 Hours",
-        Frequency: "50/60HZ Rated",
-        Power: "20KVA-1800KVA",
+        Power: "9KVA-3000KVA",
       },
     ],
   },
@@ -102,34 +81,14 @@ const genaratorData = [
     products: [
       {
         id: 1,
-        product_name:
-          "Air-Cooled Open Frame Type Single Cylinder Diesel Generator Set",
+        product_name: "Powerlink Generator",
         image: "/assets/images/products/genarator/residental1.png",
-        rated_voltage: "240V",
+        rated_voltage: "400/230V, 110-480V, 220V / 380V, 110V / 240V, 380V",
         warranty: "12 Months/1000 Hours",
         Frequency: "50/60HZ Rated",
-        Power: "20KVA-1800KVA",
+        Power: "9KVA-3000KVA",
       },
-      {
-        id: 2,
-        product_name:
-          "5kw Open Frame Hr186fa Engine Diesel Generator Set (DG6000E) Maintenance Easily",
-        image: "/assets/images/products/genarator/residental2.png",
-        rated_voltage: "240V",
-        warranty: "12 Months/1000 Hours",
-        Frequency: "50/60HZ Rated",
-        Power: "20KVA-1800KVA",
-      },
-      {
-        id: 3,
-        product_name:
-          "Open Type Diesel Genset Optional Wheels Diesel Generator Set (DG6000E)",
-        image: "/assets/images/products/genarator/residental3.png",
-        rated_voltage: "240V",
-        warranty: "12 Months/1000 Hours",
-        Frequency: "50/60HZ Rated",
-        Power: "20KVA-1800KVA",
-      },
+
       {
         id: 8,
         product_name:
