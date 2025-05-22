@@ -63,6 +63,40 @@ const partsData = [
     ],
   },
   {
+    category: "hvacs",
+    products: [
+      {
+        id: 1,
+        product_name:
+          "Air conditioner spare part air conditioner brass valves or 4 way reversing valves",
+        product_img:
+          "/assets/images/parts/hvac/Air-conditioner-spare-part-air-conditioner-brass-valves-or-4-way-reversing-valves.png",
+      },
+      {
+        id: 2,
+        product_name:
+          "China Manufacturer Copper Refnet Kit For DAIKIN KHRP26MC90 VRV/VRF",
+        product_img: "/assets/images/parts/hvac/VRF-valve.png",
+      },
+      {
+        id: 3,
+        product_name:
+          "DC Fan Motor 50Hz R410A VRF Indoor Units with Compact Four-way Cassette",
+        product_img: "/assets/images/parts/hvac/dc-fan.png",
+      },
+      {
+        id: 4,
+        product_name: "Air conditioner Touch Wire Controller",
+        product_img: "/assets/images/parts/hvac/wire-controller.png",
+      },
+      {
+        id: 5,
+        product_name: "Air compressor",
+        product_img: "/assets/images/parts/hvac/air-compressor.png",
+      },
+    ],
+  },
+  {
     category: "substations",
     products: [
       {
