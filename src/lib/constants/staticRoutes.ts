@@ -37,7 +37,7 @@ export const staticRoutes: Routes[] = [
     priority: 0.5,
   },
   {
-    url: "generator-services",
+    url: "genarator-services",
     changeFrequency: "monthly",
     priority: 0.5,
   },
