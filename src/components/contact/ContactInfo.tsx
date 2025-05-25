@@ -1,5 +1,6 @@
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import { Card, CardContent } from "../ui/card";
+import { Button } from "../ui/button";
 
 const officeCards = [
   {
@@ -37,12 +38,14 @@ const ContactInfo = () => {
       </h2>
       <div className="grid md:grid-cols-1 gap-6 max-w-5xl mx-auto">
         {officeCards.map((office) => (
-          <Card key={office.id} className=" rounded-2xl">
+          <Card key={office.id} className="rounded-2xl">
             <CardContent className="space-y-2">
               <h3 className="text-xl font-semibold mb-4">{office.title}</h3>
 
               <div className="flex items-start gap-3">
-                <FaMapMarkerAlt className="text-blue-500 mt-1" />
+                <Button variant="outline">
+                  <FaMapMarkerAlt />
+                </Button>
                 <div className="text-gray-700 dark:text-white/70 space-y-1">
                   {office.address.map((line, i) => (
                     <div key={i}>{line}</div>
@@ -50,8 +53,10 @@ const ContactInfo = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
-                <FaPhone className="text-green-500 mt-1" />
+              <div className="flex items-center gap-3">
+                <Button variant="outline">
+                  <FaPhone />
+                </Button>
                 <div className="text-gray-700 dark:text-white/70 space-y-1">
                   {office.phone.map((p, i) => (
                     <a key={i} href={p.link} className="hover:underline block">
@@ -61,8 +66,10 @@ const ContactInfo = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
-                <FaEnvelope className="text-red-500 mt-1" />
+              <div className="flex items-center gap-3">
+                <Button variant="outline">
+                  <FaEnvelope />
+                </Button>
                 <a
                   href={`mailto:${office.email}`}
                   className="text-gray-700 dark:text-white/70 hover:underline"
