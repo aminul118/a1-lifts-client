@@ -74,6 +74,15 @@ const genaratorData = [
         Frequency: "50/60HZ Rated",
         Power: "9KVA-3000KVA",
       },
+      {
+        id: 1,
+        product_name: "Kohler Generator",
+        image: "/assets/images/products/genarator/product9.webp",
+        rated_voltage: "400/230V, 110-480V, 220V / 380V, 110V / 240V, 380V",
+        warranty: "12 Months/1000 Hours",
+        Frequency: "50/60HZ Rated",
+        Power: "9KVA-3000KVA",
+      },
     ],
   },
   {
