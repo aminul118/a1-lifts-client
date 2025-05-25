@@ -59,7 +59,7 @@ export const staticRoutes: Routes[] = [
   {
     url: "contact",
     changeFrequency: "yearly",
-    priority: 5.0,
+    priority: 0.5,
   },
   {
     url: "privacy-policy",
