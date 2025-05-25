@@ -17,12 +17,12 @@ export const staticRoutes: Routes[] = [
     priority: 0.7,
   },
   {
-    url: "generators",
+    url: "genarators",
     changeFrequency: "monthly",
     priority: 0.6,
   },
   {
-    url: "hbac",
+    url: "hvac",
     changeFrequency: "monthly",
     priority: 0.6,
   },
