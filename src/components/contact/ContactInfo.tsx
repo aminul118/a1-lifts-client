@@ -1,76 +1,78 @@
-import { FaPhone, FaMapMarkerAlt, FaClock, FaEnvelope } from "react-icons/fa";
-import { Button } from "../ui/button";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import { Card, CardContent } from "../ui/card";
 
-type ContactText = { text: string; link?: string };
-
-const contactDetails: {
-  id: string;
-  icon: React.ElementType;
-  texts: ContactText[];
-}[] = [
+const officeCards = [
   {
-    id: "phones",
-    icon: FaPhone,
-    texts: [
+    id: "dhaka",
+    title: "Dhaka Office",
+    address: [
+      "Holding #121 (Level-2)",
+      "Road #21, Mohakhali DOHS",
+      "Dhaka-1206, Bangladesh",
+    ],
+    phone: [{ text: "+880 1711 9393 50", link: "tel:+8801711939350" }],
+    email: "contact@a1-lifts.com",
+  },
+  {
+    id: "faridpur",
+    title: "Faridpur Office",
+    address: [
+      "Holding #92 Ward - 25",
+      "Baitul Aman, Faridpur-7803",
+      "Bangladesh",
+    ],
+    phone: [
       { text: "+880 1902 8842 66", link: "tel:+8801902884266" },
-      { text: "+880 1711 9393 50", link: "tel:+8801711939350" },
+      { text: "+880 1711 9300 00", link: "tel:+8801711930000" },
     ],
-  },
-  {
-    id: "email",
-    icon: FaEnvelope,
-    texts: [
-      { text: "contact@a1-lifts.com", link: "mailto:contact@a1-lifts.com" },
-    ],
-  },
-  {
-    id: "location",
-    icon: FaMapMarkerAlt,
-    texts: [{ text: "Dhaka, Bangladesh" }],
-  },
-  {
-    id: "hours",
-    icon: FaClock,
-    texts: [{ text: "Mon - Sat : 9:00 AM - 6:00 PM" }],
+    email: "contact@a1-lifts.com",
   },
 ];
 
 const ContactInfo = () => {
   return (
-    <div data-aos="fade-right" className="pb-10">
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-white/90 text-center mb-8">
-          Contact Information
-        </h2>
-        <ul className="space-y-6">
-          {contactDetails.map(({ id, icon: Icon, texts }) => (
-            <li key={id} className="flex items-center gap-4 w-full">
-              <Button aria-label={id} variant="outline">
-                <Icon size={10} />
-              </Button>
-              <div className="space-y-1">
-                {texts.map((textObj, index) =>
-                  textObj.link ? (
-                    <a
-                      key={index}
-                      href={textObj.link}
-                      className="block text-gray-700 dark:text-white/70 break-words hover:underline"
-                    >
-                      {textObj.text}
-                    </a>
-                  ) : (
-                    <span
-                      key={index}
-                      className="block text-gray-700 dark:text-white/70 break-words"
-                    >
-                      {textObj.text}
-                    </span>
-                  )
-                )}
+    <div data-aos="fade-up" className="py-10 px-4">
+      <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-white/90 mb-10">
+        Office Addresses
+      </h2>
+      <div className="grid md:grid-cols-1 gap-6 max-w-5xl mx-auto">
+        {officeCards.map((office) => (
+          <Card key={office.id} className=" rounded-2xl">
+            <CardContent className="space-y-2">
+              <h3 className="text-xl font-semibold mb-4">{office.title}</h3>
+
+              <div className="flex items-start gap-3">
+                <FaMapMarkerAlt className="text-blue-500 mt-1" />
+                <div className="text-gray-700 dark:text-white/70 space-y-1">
+                  {office.address.map((line, i) => (
+                    <div key={i}>{line}</div>
+                  ))}
+                </div>
               </div>
-            </li>
-          ))}
-        </ul>
+
+              <div className="flex items-start gap-3">
+                <FaPhone className="text-green-500 mt-1" />
+                <div className="text-gray-700 dark:text-white/70 space-y-1">
+                  {office.phone.map((p, i) => (
+                    <a key={i} href={p.link} className="hover:underline block">
+                      {p.text}
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <FaEnvelope className="text-red-500 mt-1" />
+                <a
+                  href={`mailto:${office.email}`}
+                  className="text-gray-700 dark:text-white/70 hover:underline"
+                >
+                  {office.email}
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </div>
   );
