@@ -18,6 +18,7 @@ const officeCards = [
     ],
     phone: [
       { text: "+880 1902 8842 66", link: "tel:+8801902884266", whatsapp: true },
+      { text: "+880 1711 9350 50", link: "tel:+8801711935050", whatsapp: true },
       { text: "+880 2983 4892", link: "tel:+88029834892" },
       { text: "+880 2224 4153 29", link: "tel:+8802224415329" },
     ],
@@ -32,6 +33,7 @@ const officeCards = [
       "Bangladesh",
     ],
     phone: [
+      { text: "+880 1902 8842 66", link: "tel:+8801902884266", whatsapp: true },
       { text: "+880 1711 9393 50", link: "tel:+8801711939350", whatsapp: true },
     ],
     email: ["contact@a1-lifts.com", "info@a1-lifts.com"],
