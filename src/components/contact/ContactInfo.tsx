@@ -11,7 +11,8 @@ const officeCards = [
       "Road #21, Mohakhali DOHS",
       "Dhaka-1206, Bangladesh",
     ],
-    phone: [{ text: "+880 1711 9393 50", link: "tel:+8801711939350" }],
+    phone: [{ text: "+880 1902 8842 66", link: "tel:+8801902884266" }],
+
     email: "contact@a1-lifts.com",
   },
   {
@@ -22,10 +23,7 @@ const officeCards = [
       "Baitul Aman, Faridpur-7803",
       "Bangladesh",
     ],
-    phone: [
-      { text: "+880 1902 8842 66", link: "tel:+8801902884266" },
-      { text: "+880 1711 9300 00", link: "tel:+8801711930000" },
-    ],
+    phone: [{ text: "+880 1711 9393 50", link: "tel:+8801711939350" }],
     email: "contact@a1-lifts.com",
   },
 ];
