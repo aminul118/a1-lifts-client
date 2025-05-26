@@ -1,4 +1,9 @@
-import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaPhone,
+  FaEnvelope,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 
@@ -11,9 +16,12 @@ const officeCards = [
       "Road #21, Mohakhali DOHS",
       "Dhaka-1206, Bangladesh",
     ],
-    phone: [{ text: "+880 1902 8842 66", link: "tel:+8801902884266" }],
-
-    email: "contact@a1-lifts.com",
+    phone: [
+      { text: "+880 1902 8842 66", link: "tel:+8801902884266", whatsapp: true },
+      { text: "+880 2983 4892", link: "tel:+88029834892" },
+      { text: "+880 2224 4153 29", link: "tel:+8802224415329" },
+    ],
+    email: ["contact@a1-lifts.com", "info@a1-lifts.com"],
   },
   {
     id: "faridpur",
@@ -23,8 +31,10 @@ const officeCards = [
       "Baitul Aman, Faridpur-7803",
       "Bangladesh",
     ],
-    phone: [{ text: "+880 1711 9393 50", link: "tel:+8801711939350" }],
-    email: "contact@a1-lifts.com",
+    phone: [
+      { text: "+880 1711 9393 50", link: "tel:+8801711939350", whatsapp: true },
+    ],
+    email: ["contact@a1-lifts.com", "info@a1-lifts.com"],
   },
 ];
 
@@ -40,6 +50,7 @@ const ContactInfo = () => {
             <CardContent className="space-y-2">
               <h3 className="text-xl font-semibold mb-4">{office.title}</h3>
 
+              {/* Address */}
               <div className="flex items-start gap-3">
                 <Button variant="outline">
                   <FaMapMarkerAlt />
@@ -51,29 +62,44 @@ const ContactInfo = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
+              {/* Phone */}
+              <div className="flex items-start gap-3">
                 <Button variant="outline">
                   <FaPhone />
                 </Button>
                 <div className="text-gray-700 dark:text-white/70 space-y-1">
                   {office.phone.map((p, i) => (
-                    <a key={i} href={p.link} className="hover:underline block">
-                      {p.text}
-                    </a>
+                    <div key={i}>
+                      <a
+                        href={p.link}
+                        className="hover:underline inline-flex items-center gap-2"
+                      >
+                        {p.text}
+                        {p.whatsapp && (
+                          <FaWhatsapp className="text-green-500" />
+                        )}
+                      </a>
+                    </div>
                   ))}
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
+              {/* Email */}
+              <div className="flex items-start gap-3">
                 <Button variant="outline">
                   <FaEnvelope />
                 </Button>
-                <a
-                  href={`mailto:${office.email}`}
-                  className="text-gray-700 dark:text-white/70 hover:underline"
-                >
-                  {office.email}
-                </a>
+                <div className="text-gray-700 dark:text-white/70 space-y-1">
+                  {office.email.map((e, i) => (
+                    <a
+                      key={i}
+                      href={`mailto:${e}`}
+                      className="hover:underline block"
+                    >
+                      {e}
+                    </a>
+                  ))}
+                </div>
               </div>
             </CardContent>
           </Card>
