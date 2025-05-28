@@ -11,6 +11,7 @@ const Logo = ({ height, width }: { height: number; width: number }) => {
           width={width}
           height={height}
           alt="A1 lifts and enginnering logo"
+          className="py-1"
         />
       </div>
     </Link>
